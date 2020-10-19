@@ -7,10 +7,16 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.0.0-rc1 (2020-10-19)
+------------------------------
+
+* Added: first public release on Github
+
+
 Version 0.9.1 (2020-09-29)
 --------------------------
 
-* Added: link to documentation to :file:`setuo.cfg`
+* Added: link to documentation to :file:`setup.cfg`
 
 
 Version 0.9.0 (2020-09-25)
