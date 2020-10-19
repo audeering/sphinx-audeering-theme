@@ -26,6 +26,7 @@ extensions = [
 html_theme = 'sphinx_audeering_theme'
 html_theme_options = {
     'display_version': True,
+    'footer_links': False,
     'logo_only': False,
     'wide_pages': ['example-wide-pages'],
 }
