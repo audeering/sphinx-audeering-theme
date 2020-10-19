@@ -1,0 +1,58 @@
+<footer>
+  {% if (theme_prev_next_buttons_location == 'bottom' or theme_prev_next_buttons_location == 'both') and (next or prev) %}
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      {% if next %}
+        <a href="{{ next.link|e }}" class="btn btn-neutral float-right" title="{{ next.title|striptags|e }}" accesskey="n" rel="next">{{ _('Next') }} <span class="fa fa-arrow-circle-right"></span></a>
+      {% endif %}
+      {% if prev %}
+        <a href="{{ prev.link|e }}" class="btn btn-neutral float-left" title="{{ prev.title|striptags|e }}" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> {{ _('Previous') }}</a>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <hr/>
+
+  <div>
+    {%- if theme_footer_links %}
+      {% set data = '<a href="http://data.pp.audeering.com">Data</a>' %}
+      {% set doc = '<a href="http://devops.pp.audeering.com/sphinx/">Documentation</a>' %}
+      {% set infra = '<a href="http://devops.pp.audeering.com">Infrastructure</a>' %}
+      {% set python = '<a href="http://devops.pp.audeering.com/python/">Python</a>' %}
+      {% set tools = '<a href="http://tools.pp.audeering.com">Tools</a>' %}
+      {% trans data=data, doc=doc, infra=infra, python=python, tools=tools %}
+        <ul>
+          <li>{{ data }}</li>
+          <li>{{ doc }}</li>
+          <li>{{ infra }}</li>
+          <li>{{ python }}</li>
+          <li>{{ tools }}</li>
+        </ul>
+      {% endtrans %}
+    {%- endif %}
+    <p>
+      {%- if show_sphinx %}
+        {% set sphinx = '<a href="https://www.sphinx-doc.org/en/master/">Sphinx</a>' %}
+        {% set audeering_theme = '<a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>' %}
+        {% trans sphinx=sphinx, audeering_theme=audeering_theme %}
+          Built with {{ sphinx }} on {{ last_updated }} using the {{ audeering_theme }}
+        {% endtrans %}
+      {%- endif %}
+    </p>
+  </div>
+
+  <div role="contentinfo">
+    <p>
+    {%- if show_copyright %}
+      {%- if copyright %}
+        {% set copyright = copyright|e %}
+      {%- else %}
+        {% set copyright = 'audEERING GmbH' %}
+      {%- endif %}
+      &copy; {{ copyright }}
+    {%- endif %}
+    </p>
+  </div>
+
+  {%- block extrafooter %} {% endblock %}
+
+</footer>
