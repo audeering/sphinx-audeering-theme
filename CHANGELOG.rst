@@ -7,6 +7,12 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.0.0-rc2 (2020-10-19)
+------------------------------
+
+* Fixed: removed long description from package
+
+
 Version 1.0.0-rc1 (2020-10-19)
 ------------------------------
 
