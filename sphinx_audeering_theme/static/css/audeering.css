@@ -9,30 +9,6 @@ a:visited {
 a:hover {
     color: #f0989b;
 }
-.wy-menu-vertical a {
-    color: #d9d9d9;
-}
-.wy-side-nav-search>a, .wy-side-nav-search .wy-dropdown>a {
-    color: #ffffff;
-}
-.wy-side-nav-search {
-    background-color: #ab2328;
-}
-.wy-side-nav-search input[type=text] {
-    border-color: #ab2328;
-}
-.wy-nav-top {
-    background-color: #ab2328;
-}
-.wy-menu-vertical a:active {
-    background-color: #ab2328;
-}
-.wy-nav-side {
-    background-color: #3f4444;
-}
-.wy-menu-vertical p.caption {
-    color: rgb(155, 155, 155);
-}
 .rst-content dl:not(.docutils) dt {
     /* color: #bc0008; */
     color: #db3940;
