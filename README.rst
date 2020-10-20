@@ -29,7 +29,7 @@ The theme extends the official `readthedocs theme`_ by
     :target: https://sphinx-audeering-theme.readthedocs.io/
     :alt: sphinx-audeering-theme's documentation on Read the Docs
 .. |license| image:: https://img.shields.io/badge/license-MIT-green.svg
-    :target: https://github.com/audeering/audiofile/blob/master/LICENSE
+    :target: https://github.com/audeering/sphinx-audeering-theme/blob/master/LICENSE
     :alt: sphinx-audeering-theme's MIT license
 .. |python-versions| image:: https://img.shields.io/pypi/pyversions/sphinx-audeering-theme.svg
     :target: https://pypi.org/project/sphinx-audeering-theme/
