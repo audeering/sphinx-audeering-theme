@@ -7,6 +7,13 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.0.1 (2020-10-20)
+--------------------------
+
+* Added: badges to :file:`README.rst`
+* Added: list theme features in :file:`README.rst`
+
+
 Version 1.0.0 (2020-10-20)
 --------------------------
 
