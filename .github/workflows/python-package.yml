@@ -31,3 +31,4 @@ jobs:
     - name: Test building documentation
       run: |
         python -m sphinx docs/ docs/_build/ -b html -W
+        python -m sphinx docs/ docs/_build/ -b linkcheck -W
