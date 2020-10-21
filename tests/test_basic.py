@@ -76,8 +76,18 @@ def test_basic(tmpdir, theme):
         'tools',
         'audata',
     ),
+    (
+        'git@github.com:audeering/audeer.git',
+        'audeering',
+        'audeer',
+    ),
+    (
+        'https://github.com/audeering/audeer.git',
+        'audeering',
+        'audeer',
+    ),
 ])
-def test_parse_gitlab_url(url, expected_user, expected_repo):
-    user, repo = sphinx_audeering_theme.parse_gitlab_url(url)
+def test_parse_remote_url(url, expected_user, expected_repo):
+    user, repo = sphinx_audeering_theme.parse_remote_url(url)
     assert user == expected_user
     assert repo == expected_repo
