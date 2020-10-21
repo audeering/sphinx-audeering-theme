@@ -61,8 +61,8 @@ The ``sphinx-audeering-theme`` inherits from sphinx-rtd-theme_
 and can be further modified by applying their `configuration settings`_.
 
 
-Link to Gitlab
---------------
+Link to Gitlab or Github
+------------------------
 
 The theme adds automatically a link 
 to the source file in the Gitlab project at the top right of the page.
@@ -83,6 +83,18 @@ If you don't specify them,
 ``display_gitlab``, ``gitlab_user``, ``gitlab_repo``, ``gitlab_version``
 are automatically extracted from your git repository.
 If you are not inside a git repository, ``display_gitlab`` is set to ``False``.
+
+If you use Github and want to display a link to your Github project use:
+
+.. code-block:: python
+
+    html_context = {
+        'display_github': True,
+    }
+
+As with Gitlab you can specify
+``github_host``, ``github_user``, ``githup_repo``, ``github_version``
+if needed.
 
 
 .. _sphinx-rtd-theme:
