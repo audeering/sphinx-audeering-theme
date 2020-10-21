@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Example: API &mdash; sphinx-audeering-theme Documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/audeering.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Example: wide pages" href="example-wide-pages.html" />
+    <link rel="prev" title="Usage" href="usage.html" />
+    
+      
+    
+  
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          <a href="index.html">
+          
+            <img src="_static/images/audeering.png" class="logo" alt="audEERING"/>
+          
+          
+            <span> sphinx-audeering-theme</span>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                3e48acd
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Example: API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#theme">Theme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#extract-zip">extract_zip</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="example-wide-pages.html">Example: wide pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">sphinx-audeering-theme</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Example: API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com///github.com/audeering/sphinx-audeering-theme/blob/(HEAD/docs/example-api.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="example-api">
+<h1>Example: API<a class="headerlink" href="#example-api" title="Permalink to this headline">¶</a></h1>
+<p>You can include automatically generated API documentation
+from the doctsrings of your modules and functions.
+To provide this functionality
+you have to add the <a class="reference external" href="http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html">sphinx.ext.autodoc</a> to your <code class="docutils literal notranslate"><span class="pre">docs/conf.py</span></code> file:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;sphinx.ext.autodoc&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>With <a class="reference external" href="http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html">sphinx.ext.autodoc</a>
+you can automatically include the docstring of a module
+and all its members with the automodule directive, e.g.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">automodule</span><span class="p">::</span> sphinx.theming
+    <span class="nc">:members:</span>
+</pre></div>
+</div>
+<p>If you prefer to include only parts of that module
+and add headers yourself you could use:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">Theme</span>
+<span class="gh">-----</span>
+
+<span class="p">..</span> <span class="ow">autoclass</span><span class="p">::</span> sphinx.theming.Theme
+    <span class="nc">:members:</span>
+
+<span class="gh">extract_zip</span>
+<span class="gh">-----------</span>
+
+<span class="p">..</span> <span class="ow">autofunction</span><span class="p">::</span> sphinx.theming.extract_zip
+</pre></div>
+</div>
+<p>Which results in:</p>
+<div class="section" id="theme">
+<h2>Theme<a class="headerlink" href="#theme" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="sphinx.theming.Theme">
+<em class="property">class </em><code class="sig-prename descclassname">sphinx.theming.</code><code class="sig-name descname">Theme</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">theme_path</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">factory</span><span class="p">:</span> <span class="n">sphinx.theming.HTMLThemeFactory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sphinx.theming.Theme" title="Permalink to this definition">¶</a></dt>
+<dd><p>A Theme is a set of HTML templates and configurations.</p>
+<p>This class supports both theme directory and theme archive (zipped theme).</p>
+<dl class="py method">
+<dt id="sphinx.theming.Theme.cleanup">
+<code class="sig-name descname">cleanup</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#sphinx.theming.Theme.cleanup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove temporary directories.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sphinx.theming.Theme.get_config">
+<code class="sig-name descname">get_config</code><span class="sig-paren">(</span><em class="sig-param">section: str</em>, <em class="sig-param">name: str</em>, <em class="sig-param">default: Any = &lt;object object&gt;</em><span class="sig-paren">)</span> &#x2192; Any<a class="headerlink" href="#sphinx.theming.Theme.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the value for a theme configuration setting, searching the
+base theme chain.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sphinx.theming.Theme.get_options">
+<code class="sig-name descname">get_options</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">overrides</span><span class="p">:</span> <span class="n">Dict<span class="p">[</span>str<span class="p">, </span>Any<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">{}</span></em><span class="sig-paren">)</span> &#x2192; Dict<span class="p">[</span>str<span class="p">, </span>Any<span class="p">]</span><a class="headerlink" href="#sphinx.theming.Theme.get_options" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a dictionary of theme options and their values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sphinx.theming.Theme.get_theme_dirs">
+<code class="sig-name descname">get_theme_dirs</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>str<span class="p">]</span><a class="headerlink" href="#sphinx.theming.Theme.get_theme_dirs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of theme directories, beginning with this theme’s,
+then the base theme’s, then that one’s base theme’s, etc.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="extract-zip">
+<h2>extract_zip<a class="headerlink" href="#extract-zip" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="sphinx.theming.extract_zip">
+<code class="sig-prename descclassname">sphinx.theming.</code><code class="sig-name descname">extract_zip</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">targetdir</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#sphinx.theming.extract_zip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract zip file to target directory.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="example-wide-pages.html" class="btn btn-neutral float-right" title="Example: wide pages" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="usage.html" class="btn btn-neutral float-left" title="Usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div>
+    <p>
+        
+        
+        
+          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2020/10/21 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
+        
+    </p>
+  </div>
+
+  <div role="contentinfo">
+    <p>
+        
+      &copy; audEERING GmbH
+    </p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

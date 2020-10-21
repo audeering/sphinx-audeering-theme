@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Usage &mdash; sphinx-audeering-theme Documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/audeering.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Example: API" href="example-api.html" />
+    <link rel="prev" title="Installation" href="installation.html" />
+    
+      
+    
+  
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          <a href="index.html">
+          
+            <img src="_static/images/audeering.png" class="logo" alt="audEERING"/>
+          
+          
+            <span> sphinx-audeering-theme</span>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                3e48acd
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#theme-options">Theme options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#link-to-gitlab-or-github">Link to Gitlab or Github</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="example-api.html">Example: API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example-wide-pages.html">Example: wide pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">sphinx-audeering-theme</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Usage</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com///github.com/audeering/sphinx-audeering-theme/blob/(HEAD/docs/usage.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<p>To use the Sphinx audEERING theme,
+add the following to your <code class="file docutils literal notranslate"><span class="pre">docs/conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;sphinx_audeering_theme&#39;</span>
+</pre></div>
+</div>
+<div class="section" id="copyright">
+<h2>Copyright<a class="headerlink" href="#copyright" title="Permalink to this headline">¶</a></h2>
+<p>The theme sets the <code class="docutils literal notranslate"><span class="pre">copyright</span></code> variable
+to <code class="docutils literal notranslate"><span class="pre">'audEERING</span> <span class="pre">GmbH'</span></code>,
+and displays it in the footer.
+You can overwrite it by setting <code class="docutils literal notranslate"><span class="pre">copyright</span></code>
+yourself in <code class="file docutils literal notranslate"><span class="pre">docs/conf.py</span></code>, e.g.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">copyright</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;2018-</span><span class="si">{</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">year</span><span class="si">}</span><span class="s1"> audEERING GmbH&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="theme-options">
+<h2>Theme options<a class="headerlink" href="#theme-options" title="Permalink to this headline">¶</a></h2>
+<p>You can influence the appearance
+by deciding if your project title
+and the version of your project should be shown.
+To show both add the following to <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;display_version&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;logo_only&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>If you have pages in your documentation
+that profit from <a class="reference internal" href="example-wide-pages.html#sec-wide-page"><span class="std std-ref">larger page width</span></a>,
+you can list their names under:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_themes_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;wide_pages&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;page-name1&#39;</span><span class="p">,</span> <span class="s1">&#39;page-name2&#39;</span><span class="p">],</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>In the footer links to main documentation pages are shown.
+You can hide those links with:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_themes_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;footer_links&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">sphinx-audeering-theme</span></code> inherits from <a class="reference external" href="https://sphinx-rtd-theme.readthedocs.io/">sphinx-rtd-theme</a>
+and can be further modified by applying their <a class="reference external" href="https://sphinx-rtd-theme.readthedocs.io/en/latest/configuring.html">configuration settings</a>.</p>
+</div>
+<div class="section" id="link-to-gitlab-or-github">
+<h2>Link to Gitlab or Github<a class="headerlink" href="#link-to-gitlab-or-github" title="Permalink to this headline">¶</a></h2>
+<p>The theme adds automatically a link
+to the source file in the Gitlab project at the top right of the page.
+The link can be adjusted by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_context</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;display_gitlab&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="c1"># Integrate Gitlab</span>
+    <span class="s1">&#39;gitlab_host&#39;</span><span class="p">:</span> <span class="s1">&#39;gitlab.audeering.com&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;gitlab_user&#39;</span><span class="p">:</span> <span class="s1">&#39;MyUserName&#39;</span><span class="p">,</span> <span class="c1"># Username</span>
+    <span class="s1">&#39;gitlab_repo&#39;</span><span class="p">:</span> <span class="s1">&#39;MyDoc&#39;</span><span class="p">,</span> <span class="c1"># Repo name</span>
+    <span class="s1">&#39;gitlab_version&#39;</span><span class="p">:</span> <span class="s1">&#39;master&#39;</span><span class="p">,</span> <span class="c1"># Branch</span>
+    <span class="s1">&#39;conf_py_path&#39;</span><span class="p">:</span> <span class="s1">&#39;/docs/&#39;</span><span class="p">,</span> <span class="c1"># Path in the checkout to the docs root</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>If you don’t specify them,
+<code class="docutils literal notranslate"><span class="pre">display_gitlab</span></code>, <code class="docutils literal notranslate"><span class="pre">gitlab_user</span></code>, <code class="docutils literal notranslate"><span class="pre">gitlab_repo</span></code>, <code class="docutils literal notranslate"><span class="pre">gitlab_version</span></code>
+are automatically extracted from your git repository.
+If you are not inside a git repository, <code class="docutils literal notranslate"><span class="pre">display_gitlab</span></code> is set to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>If you use Github and want to display a link to your Github project use:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_context</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;display_github&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>As with Gitlab you can specify
+<code class="docutils literal notranslate"><span class="pre">github_host</span></code>, <code class="docutils literal notranslate"><span class="pre">github_user</span></code>, <code class="docutils literal notranslate"><span class="pre">githup_repo</span></code>, <code class="docutils literal notranslate"><span class="pre">github_version</span></code>
+if needed.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="example-api.html" class="btn btn-neutral float-right" title="Example: API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div>
+    <p>
+        
+        
+        
+          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2020/10/21 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
+        
+    </p>
+  </div>
+
+  <div role="contentinfo">
+    <p>
+        
+      &copy; audEERING GmbH
+    </p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
