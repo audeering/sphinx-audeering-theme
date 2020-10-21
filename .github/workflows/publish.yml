@@ -24,3 +24,15 @@ jobs:
       run: |
         python setup.py sdist bdist_wheel
         python -m twine upload dist/*
+    - name: Install doc dependencies
+      run: |
+        pip install -r requirements.txt
+        pip install -r docs/requirements.txt
+    - name: Build documentation
+      run: |
+        python -m sphinx docs/ docs/_build/ -b html
+    - name: Deploy documentation to Github pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs/_build
