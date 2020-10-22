@@ -7,6 +7,13 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.0.3 (2020-10-22)
+--------------------------
+
+* Added: create automatic releases on Github
+* Changed: switch to Github pages for documentation
+
+
 Version 1.0.2 (2020-10-21)
 --------------------------
 
