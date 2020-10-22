@@ -25,9 +25,9 @@ The theme extends the official `readthedocs theme`_ by
 .. |tests| image:: https://github.com/audeering/sphinx-audeering-theme/workflows/Test/badge.svg
     :target: https://github.com/audeering/sphinx-audeering-theme/actions?query=workflow%3ATest
     :alt: Test status
-.. |docs| image:: https://readthedocs.org/projects/sphinx-audeering-theme/badge/
-    :target: https://sphinx-audeering-theme.readthedocs.io/
-    :alt: sphinx-audeering-theme's documentation on Read the Docs
+.. |docs| image:: https://img.shields.io/pypi/v/sphinx-audeering-theme?label=docs
+    :target: https://audeering.github.io/sphinx-audeering-theme/
+    :alt: sphinx-audeering-theme's documentation
 .. |license| image:: https://img.shields.io/badge/license-MIT-green.svg
     :target: https://github.com/audeering/sphinx-audeering-theme/blob/master/LICENSE
     :alt: sphinx-audeering-theme's MIT license
