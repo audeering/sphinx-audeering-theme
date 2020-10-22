@@ -7,6 +7,14 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.0.5 (2020-10-22)
+--------------------------
+
+* Changed: show only bullet points in Github release
+* Fixed: support multi-line changelog entries in Github release
+* Fixed: replaces missing 1.0.4 version
+
+
 Version 1.0.4 (2020-10-22)
 --------------------------
 
