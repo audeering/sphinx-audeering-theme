@@ -45,8 +45,8 @@ jobs:
     - name: Read CHANGELOG
       id: changelog
       run: |
-        # Get the last enrty to CHANGELOG
-        CHANGELOG=$(git diff -U0 HEAD^ HEAD | grep '^[+]' | grep -Ev '^(--- a/|\+\+\+ b/)' | sed 's/\+//')
+        # Get bullet points from last CHANGELOG entry
+        CHANGELOG=$(git diff -U0 HEAD^ HEAD | grep '^[+]\*' | sed 's/\+//')
         # Support for multiline, see
         # https://github.com/actions/create-release/pull/11#issuecomment-640071918
         CHANGELOG="${CHANGELOG//'%'/'%25'}"
