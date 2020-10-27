@@ -7,6 +7,15 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.0.7 (2020-10-27)
+--------------------------
+
+* Added: long-description to ``setup.cfg``,
+  which will be shown on pypi.org
+* Added: links to usage and installation documentation to README
+* Fixed: multi-line statements in Github release changelog
+
+
 Version 1.0.6 (2020-10-22)
 --------------------------
 
