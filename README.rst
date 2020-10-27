@@ -15,11 +15,16 @@ The theme extends the official `readthedocs theme`_ by
 * make `juptyer-sphinx`_ code cells appear like normal code cells
 * custom styling for `copy-button`_ and nbsphinx_
 
+Have a look at the installation_ and usage_ instructions as a starting point.
+
+
 .. _Sphinx: http://www.sphinx-doc.org/
 .. _readthedocs theme: https://sphinx-rtd-theme.readthedocs.io/
 .. _juptyer-sphinx: https://jupyter-sphinx.readthedocs.io/
 .. _copy-button: https://sphinx-copybutton.readthedocs.io/
 .. _nbsphinx: https://nbsphinx.readthedocs.io/
+.. _installation: https://audeering.github.io/sphinx-audeering-theme/installation.html
+.. _usage: https://audeering.github.io/sphinx-audeering-theme/usage.html
 
 .. badges images and links:
 .. |tests| image:: https://github.com/audeering/sphinx-audeering-theme/workflows/Test/badge.svg
