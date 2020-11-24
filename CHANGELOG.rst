@@ -7,6 +7,13 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.0.8 (2020-11-24)
+--------------------------
+
+* Changed: switch PNG version of audEERING logo for SVG logo
+* Fixed: included missing JS file for search
+
+
 Version 1.0.7 (2020-10-27)
 --------------------------
 
