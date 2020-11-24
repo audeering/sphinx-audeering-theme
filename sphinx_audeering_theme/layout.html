@@ -199,6 +199,12 @@
   </div>
   {% include "versions.html" %}
 
+
+  {# JAVASCRIPTS #}
+  {%- block scripts %}
+  <!--[if lt IE 9]>
+    <script src="{{ pathto('_static/js/html5shiv.min.js', 1) }}"></script>
+  <![endif]-->
   {% if not embedded %}
 
     {# XXX Sphinx 1.8.0 made this an external js-file, quick fix until we refactor the template to inherert more blocks directly from sphinx #}
@@ -233,6 +239,7 @@
           SphinxRtdTheme.Navigation.enable({{ 'true' if theme_sticky_navigation|tobool else 'false' }});
       });
   </script>
+  {%- endblock %}
 
   {%- block footer %} {% endblock %}
 
