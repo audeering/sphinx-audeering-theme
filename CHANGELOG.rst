@@ -7,6 +7,12 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.0.9 (2020-12-09)
+--------------------------
+
+* Fixed: code example on the documentation page for wide pages
+
+
 Version 1.0.8 (2020-11-24)
 --------------------------
 
