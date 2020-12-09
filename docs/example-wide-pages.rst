@@ -8,7 +8,7 @@ This is a wide page, specified in :file:`docs/conf.py` by:
 .. code-block:: python
 
    html_theme_options = {
-       wide_pages = ['example-wide-pages'],
+       'wide_pages': ['example-wide-pages'],
    }
 
 .. csv-table:: A wide table
