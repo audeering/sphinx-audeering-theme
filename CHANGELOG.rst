@@ -7,6 +7,12 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.0.10 (2021-01-26)
+---------------------------
+
+* Added: link to internal models page in footer
+
+
 Version 1.0.9 (2020-12-09)
 --------------------------
 
