@@ -7,6 +7,13 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.0.11 (2021-02-10)
+---------------------------
+
+* Fixed: pin ``sphinx-rtd-theme`` to version 0.4.3
+  to avoid CSS and font incompatibilities
+
+
 Version 1.0.10 (2021-01-26)
 ---------------------------
 
