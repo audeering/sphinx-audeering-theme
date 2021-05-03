@@ -7,6 +7,12 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.0.12 (2021-05-03)
+---------------------------
+
+* Fixed: Javascript error in search for ``sphinx>=3.4.0``
+
+
 Version 1.0.11 (2021-02-10)
 ---------------------------
 
