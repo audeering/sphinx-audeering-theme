@@ -7,6 +7,12 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.0.13 (2021-07-20)
+---------------------------
+
+* Fixed: pin ``docutils<0.17`` to avoid formatting errors
+
+
 Version 1.0.12 (2021-05-03)
 ---------------------------
 
