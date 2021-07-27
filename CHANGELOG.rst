@@ -7,6 +7,12 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.0.14 (2021-07-27)
+---------------------------
+
+* Fixed: reduce bottom margin for tables in docstring
+
+
 Version 1.0.13 (2021-07-20)
 ---------------------------
 
