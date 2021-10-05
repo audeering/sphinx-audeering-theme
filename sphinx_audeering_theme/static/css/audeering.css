@@ -1,13 +1,15 @@
 /* audEERING colors */
 
 a {
-    color: #e03c46;
+    /* color: #e03c46; */
+    color: #E13B41;
 }
 a:visited {
-    color: #e03c46;
+    /* color: #e03c46; */
+    color: #E13B41;
 }
 a:hover {
-    color: #f0989b;
+    color: #BB2A30;
 }
 .wy-menu-vertical a {
     color: #d9d9d9;
@@ -16,16 +18,20 @@ a:hover {
     color: #ffffff;
 }
 .wy-side-nav-search {
-    background-color: #ab2328;
+    /** background-color: #ab2328; **/
+    background-color: #E13B41;
 }
 .wy-side-nav-search input[type=text] {
-    border-color: #ab2328;
+    /** border-color: #ab2328; **/
+    border-color: #E13B41;
 }
 .wy-nav-top {
-    background-color: #ab2328;
+    /** background-color: #ab2328; **/
+    background-color: #E13B41;
 }
 .wy-menu-vertical a:active {
-    background-color: #ab2328;
+    /** background-color: #ab2328; **/
+    background-color: #E13B41;
 }
 .wy-nav-side {
     background-color: #3f4444;
@@ -34,36 +40,45 @@ a:hover {
     color: rgb(155, 155, 155);
 }
 .rst-content dl:not(.docutils) dt {
-    /* color: #bc0008; */
-    color: #db3940;
-    border-left: solid 3px #db3940;
+    /* color: #db3940; */
+    /* border-left: solid 3px #db3940; */
+    color: #E13B41;
+    border-left: solid 3px #E13B41;
     border-top: none;
-    background: #efeff0;
+    /* background: #efeff0; */
+    background: #f6f6f6;
 }
 /* Color of notes */
 .rst-content .note .admonition-title {
-    background: #db3940;
+    /* background: #db3940; */
+    background: #E13B41;
 }
 .rst-content .note {
-    background: #efeff0;
+    /* background: #efeff0; */
+    background: #f6f6f6;
 }
 /* Code blocks */
 .rst-content .highlight {
-    background: #efeff0;
+    /* background: #efeff0; */
+    background: #f6f6f6;
 }
 .rst-content .highlight .gp {
-    color: #db3940;
+    /* color: #db3940; */
+    color: #E13B41;
 }
 /* Link to code and back */
 .rst-content .viewcode-link, .rst-content .viewcode-back {
-    color: #db3940;
+    /* color: #db3940; */
+    color: #E13B41;
 }
 content .viewcode-back {
-    color: #db3940;
+    /* color: #db3940; */
+    color: #E13B41;
 }
 /* Main text color */
 body {
-    color: #393939;
+    /* color: #393939; */
+    color: #3F4444;
 }
 /* Download box for Jupyter notebooks */
 .notebook {
