@@ -29,6 +29,10 @@ a:hover {
     /** background-color: #ab2328; **/
     background-color: #E13B41;
 }
+/* Ensure right part of scrren has same color as content */
+.wy-nav-content-wrap {
+    background: none;
+}
 .wy-menu-vertical a:active {
     /** background-color: #ab2328; **/
     background-color: #E13B41;
@@ -48,6 +52,31 @@ a:hover {
     /* background: #efeff0; */
     background: #f6f6f6;
 }
+.rst-content dl:not(.docutils) dl dt {
+    color: #3F4444;
+    border-left: solid 3px #DDDDEB;
+    border-top: none;
+    background: #f6f6f6;
+}
+
+/* Next + Previous buttons */
+/**
+.btn-neutral {
+    background-color: #E13B41 !important;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    color: #FFFFFF !important;
+}
+.btn-neutral:hover {
+    background-color: #E13B41 !important;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    color: #FFFFFF !important;
+}
+**/
+
 /* Color of notes */
 .rst-content .note .admonition-title {
     /* background: #db3940; */
@@ -61,6 +90,11 @@ a:hover {
 .rst-content .highlight {
     /* background: #efeff0; */
     background: #f6f6f6;
+}
+.rst-content div[class^='highlight'] {
+    border-radius: 3px;
+    border: 0px;
+    /*border-left: 3px solid #DDDDEB; */
 }
 .rst-content .highlight .gp {
     /* color: #db3940; */

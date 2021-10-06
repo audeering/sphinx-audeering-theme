@@ -17,7 +17,7 @@ master_doc = 'index'
 extensions = []
 source_suffix = '.rst'
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-pygments_style = None
+pygments_style = 'friendly'
 extensions = [
     'sphinx.ext.autodoc',
 ]
