@@ -1,11 +1,9 @@
 /* audEERING colors */
 
 a {
-    /* color: #e03c46; */
     color: #E13B41;
 }
 a:visited {
-    /* color: #e03c46; */
     color: #E13B41;
 }
 a:hover {
@@ -18,15 +16,12 @@ a:hover {
     color: #ffffff;
 }
 .wy-side-nav-search {
-    /** background-color: #ab2328; **/
     background-color: #E13B41;
 }
 .wy-side-nav-search input[type=text] {
-    /** border-color: #ab2328; **/
     border-color: #E13B41;
 }
 .wy-nav-top {
-    /** background-color: #ab2328; **/
     background-color: #E13B41;
 }
 /* Ensure right part of scrren has same color as content */
@@ -34,7 +29,6 @@ a:hover {
     background: none;
 }
 .wy-menu-vertical a:active {
-    /** background-color: #ab2328; **/
     background-color: #E13B41;
 }
 .wy-nav-side {
@@ -44,52 +38,28 @@ a:hover {
     color: rgb(155, 155, 155);
 }
 .rst-content dl:not(.docutils) dt {
-    /* color: #db3940; */
-    /* border-left: solid 3px #db3940; */
     color: #E13B41;
     border-left: solid 3px #E13B41;
     border-top: none;
-    /* background: #efeff0; */
-    background: #f6f6f6;
+    background: #F6F6F6;
 }
 .rst-content dl:not(.docutils) dl dt {
     color: #3F4444;
     border-left: solid 3px #DDDDEB;
     border-top: none;
-    background: #f6f6f6;
+    background: #F6F6F6;
 }
-
-/* Next + Previous buttons */
-/**
-.btn-neutral {
-    background-color: #E13B41 !important;
-    background-image: none;
-    border: none;
-    box-shadow: none;
-    color: #FFFFFF !important;
-}
-.btn-neutral:hover {
-    background-color: #E13B41 !important;
-    background-image: none;
-    border: none;
-    box-shadow: none;
-    color: #FFFFFF !important;
-}
-**/
 
 /* Color of notes */
 .rst-content .note .admonition-title {
-    /* background: #db3940; */
     background: #E13B41;
 }
 .rst-content .note {
-    /* background: #efeff0; */
-    background: #f6f6f6;
+    background: #F6F6F6;
 }
 /* Code blocks */
 .rst-content .highlight {
-    /* background: #efeff0; */
-    background: #f6f6f6;
+    background: #F6F6F6;
 }
 .rst-content div[class^='highlight'] {
     border-radius: 3px;
@@ -97,26 +67,22 @@ a:hover {
     /*border-left: 3px solid #DDDDEB; */
 }
 .rst-content .highlight .gp {
-    /* color: #db3940; */
     color: #E13B41;
 }
 /* Link to code and back */
 .rst-content .viewcode-link, .rst-content .viewcode-back {
-    /* color: #db3940; */
     color: #E13B41;
 }
 content .viewcode-back {
-    /* color: #db3940; */
     color: #E13B41;
 }
 /* Main text color */
 body {
-    /* color: #393939; */
     color: #3F4444;
 }
 /* Download box for Jupyter notebooks */
 .notebook {
-    background: #efeff0;
+    background: #F6F6F6;
 }
 .notebook a {
     padding: 12px;
@@ -125,16 +91,16 @@ body {
     margin-bottom: 24px;
     display: block;
     font-size: 1.125rem;
-    color: #393939;
+    color: #3F4444;
     font-weight: bold;
     border-bottom: 3px solid transparent;
 }
 .notebook a::before {
     content: "\2193 ";
-    color: #e03c46;
+    color: #E13B41;;
 }
 .notebook a:hover {
-    border-bottom: 3px solid #e03c46;
+    border-bottom: 3px solid #E13B41;
 }
 /*** Tables ***/
 /* Allow for line breaks in Tables.
@@ -179,7 +145,7 @@ body {
     font-size: 100%;
     font-weight: 100;
     font-family: "Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
-    color: #393939;
+    color: #3F4444;
 }
 
 /* Adjust appearance of jupyter-sphinx code cells */
@@ -191,7 +157,7 @@ div.jupyter_container {
     border: none !important;
 }
 .jupyter_container div.code_cell {
-    background: #efeff0 !important;
+    background: #F6F6F6 !important;
     border: 1px solid #e1e4e5 !important;
 }
 .jupyter_container div.code_cell pre {
