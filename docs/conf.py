@@ -21,6 +21,9 @@ pygments_style = None
 extensions = [
     'sphinx.ext.autodoc',
 ]
+linkcheck_ignore = [
+    'https://sphinx-doc.org',
+]
 
 # HTML --------------------------------------------------------------------
 html_theme = 'sphinx_audeering_theme'
