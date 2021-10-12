@@ -158,7 +158,7 @@ div.jupyter_container {
 }
 .jupyter_container div.code_cell {
     background: #F6F6F6 !important;
-    border: 1px solid #e1e4e5 !important;
+    border: 0px !important;
 }
 .jupyter_container div.code_cell pre {
     padding: 12px !important;
