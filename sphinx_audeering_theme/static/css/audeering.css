@@ -1,5 +1,20 @@
 /* audEERING colors */
 
+/***** PAGE **************************************************************/
+body {
+    /* Main text color */
+    color: #3F4444;
+}
+.wy-body-for-nav {
+    /* Background color of whole page */
+    background: #FFFFFF;
+}
+@media screen and (min-width: 1100px) .wy-nav-content {
+    /* background color of content part */
+    background: #FFFFFF;
+}
+ 
+/***** LINKS *************************************************************/
 a {
     color: #E13B41;
 }
@@ -9,11 +24,10 @@ a:visited {
 a:hover {
     color: #BB2A30;
 }
-.wy-menu-vertical a {
-    color: #d9d9d9;
-}
+
+/***** SEARCH BAR ********************************************************/
 .wy-side-nav-search>a, .wy-side-nav-search .wy-dropdown>a {
-    color: #ffffff;
+    color: #FFFFFF;
 }
 .wy-side-nav-search {
     background-color: #E13B41;
@@ -21,21 +35,28 @@ a:hover {
 .wy-side-nav-search input[type=text] {
     border-color: #E13B41;
 }
-.wy-nav-top {
-    background-color: #E13B41;
+
+/***** SIDE BAR ***********************************************************/
+.wy-nav-side {
+    /* Background color of TOC menu */
+    background-color: #3F4444;
 }
-/* Ensure right part of scrren has same color as content */
-.wy-nav-content-wrap {
-    background: none;
+.wy-menu-vertical a {
+    /* Color of TOC entries */
+    color: #DCDCDC;
 }
 .wy-menu-vertical a:active {
+    /* Background color of TOC entries for mouse over */
+    /* background-color: #ab2328; */
     background-color: #E13B41;
 }
-.wy-nav-side {
-    background-color: #3f4444;
+.wy-nav-top {
+    /* Background color of top bar in mobile view */
+    background-color: #E13B41;
 }
 .wy-menu-vertical p.caption {
-    color: rgb(155, 155, 155);
+    /* Color of TOC captions */
+    color: #7d8181;
 }
 .rst-content dl:not(.docutils) dt {
     color: #E13B41;
@@ -75,10 +96,6 @@ a:hover {
 }
 content .viewcode-back {
     color: #E13B41;
-}
-/* Main text color */
-body {
-    color: #3F4444;
 }
 /* Download box for Jupyter notebooks */
 .notebook {
