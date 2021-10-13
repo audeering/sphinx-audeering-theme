@@ -1,105 +1,131 @@
 /* audEERING colors */
 
+/***** COLOR DEFINITION **************************************************/
+:root {
+    --black: #3F4444;
+    --white: #FFFFFF;
+    --red: #E13B41;
+    --dark-red: #BB2A30;
+    /* Grey, going from light to dark */
+    --light-grey: #F6F6F6;  /* UI CANVAS GREY */
+    --grey: #DCDCDC;  /* LIGHT GREY */
+    --dark-grey: #7D8181;  /* UI INACTIVE GREY */
+    /* Colors not used yet: */
+    /* --grey3: #B9BEBE;  /* UI HIGH GREY */
+    /* --grey5: #555A5A;  /* UI LOW GREY */
+    /* --grey6: #363636; /* UI DARK GREY */
+    
+}
+
 /***** PAGE **************************************************************/
 body {
     /* Main text color */
-    color: #3F4444;
+    color: var(--black);
 }
 .wy-body-for-nav {
     /* Background color of whole page */
-    background: #FFFFFF;
+    background: var(--white);
 }
-@media screen and (min-width: 1100px) .wy-nav-content {
+.wy-nav-content {
     /* background color of content part */
-    background: #FFFFFF;
+    background: var(--white);
+}
+.wy-nav-content-wrap {
+    /* Ensure right part of scrren has same color as content */
+    background: none;
 }
  
 /***** LINKS *************************************************************/
 a {
-    color: #E13B41;
+    color: var(--red);
 }
 a:visited {
-    color: #E13B41;
+    color: var(--red);
 }
 a:hover {
-    color: #BB2A30;
+    color: var(--dark-red);
 }
 
 /***** SEARCH BAR ********************************************************/
 .wy-side-nav-search>a, .wy-side-nav-search .wy-dropdown>a {
-    color: #FFFFFF;
+    color: var(--white);
 }
 .wy-side-nav-search {
-    background-color: #E13B41;
+    background-color: var(--red);
 }
 .wy-side-nav-search input[type=text] {
-    border-color: #E13B41;
+    border-color: var(--red);
 }
 
 /***** SIDE BAR ***********************************************************/
 .wy-nav-side {
     /* Background color of TOC menu */
-    background-color: #3F4444;
+    background-color: var(--black);
 }
 .wy-menu-vertical a {
     /* Color of TOC entries */
-    color: #DCDCDC;
+    color: var(--grey);
 }
 .wy-menu-vertical a:active {
     /* Background color of TOC entries for mouse over */
-    /* background-color: #ab2328; */
-    background-color: #E13B41;
+    background-color: var(--red);
+}
+.wy-menu-vertical li.on a,
+.wy-menu-vertical li.current>a {
+    /* Background color of selected TOC entry */
+    background-color: var(--white);
 }
 .wy-nav-top {
     /* Background color of top bar in mobile view */
-    background-color: #E13B41;
+    background-color: var(--red);
 }
 .wy-menu-vertical p.caption {
     /* Color of TOC captions */
-    color: #7d8181;
+    color: var(--dark-grey);
 }
 .rst-content dl:not(.docutils) dt {
-    color: #E13B41;
-    border-left: solid 3px #E13B41;
+    color: var(--red);
+    border-left: solid 3px var(--red);
     border-top: none;
-    background: #F6F6F6;
+    background: var(--light-grey);
 }
 .rst-content dl:not(.docutils) dl dt {
-    color: #3F4444;
-    border-left: solid 3px #DDDDEB;
+    color: var(--black);
+    border-left: solid 3px var(--grey);
     border-top: none;
-    background: #F6F6F6;
+    background: var(--light-grey);
 }
 
-/* Color of notes */
+/***** ADMONITIONS (NOTES) ***********************************************/
 .rst-content .note .admonition-title {
-    background: #E13B41;
+    background: var(--red);
 }
 .rst-content .note {
-    background: #F6F6F6;
+    background: var(--light-grey);
 }
-/* Code blocks */
+
+/****** CODE BLOCKS ******************************************************/
 .rst-content .highlight {
-    background: #F6F6F6;
+    background: var(--light-grey);
 }
 .rst-content div[class^='highlight'] {
     border-radius: 3px;
     border: 0px;
-    /*border-left: 3px solid #DDDDEB; */
 }
 .rst-content .highlight .gp {
-    color: #E13B41;
+    color: var(--red);
 }
 /* Link to code and back */
 .rst-content .viewcode-link, .rst-content .viewcode-back {
-    color: #E13B41;
+    color: var(--red);
 }
 content .viewcode-back {
-    color: #E13B41;
+    color: var(--red);
 }
-/* Download box for Jupyter notebooks */
+
+/***** DOWNLOAD BOX FOR JUPYTER NOTEBOOKS ********************************/
 .notebook {
-    background: #F6F6F6;
+    background: var(--light-grey);
 }
 .notebook a {
     padding: 12px;
@@ -108,18 +134,45 @@ content .viewcode-back {
     margin-bottom: 24px;
     display: block;
     font-size: 1.125rem;
-    color: #3F4444;
+    color: var(--black);
     font-weight: bold;
     border-bottom: 3px solid transparent;
 }
 .notebook a::before {
     content: "\2193 ";
-    color: #E13B41;;
+    color: var(--red);
 }
 .notebook a:hover {
-    border-bottom: 3px solid #E13B41;
+    border-bottom: 3px solid var(--red);
 }
-/*** Tables ***/
+
+/***** TABLES ************************************************************/
+.wy-table-odd td,
+.wy-table-striped tr:nth-child(2n-1) td,
+.rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td {
+    /* Background color of every second table row */
+    background-color: var(--light-grey);
+}
+.wy-table-bordered-all td,
+.rst-content table.docutils td {
+    /* Color of table border */
+    border-bottom: 1px solid var(--grey);
+    border-left: 1px solid var(--grey);
+}
+.wy-table-responsive thead th {
+    /* Fix border lines in table headers */
+    border: solid 1px var(--grey);
+    border-bottom: solid 2px var(--grey);
+}
+.wy-table-responsive tbody tr th.stub {
+    /* Fix borders for row headers */
+    border-right: solid 2px var(--grey);
+    border-bottom: solid 1px var(--grey);
+}
+.wy-table-responsive thead tr th.stub {
+    /* Fix borders for row headers */
+    border-right: solid 2px var(--grey);
+}
 /* Allow for line breaks in Tables.
  * See: https://stackoverflow.com/a/40650120 */
 .wy-table-responsive table td {
@@ -134,11 +187,6 @@ content .viewcode-back {
 .rst-content dl table td p {
     margin-bottom: 0px !important;
 }
-/* Fix border lines in table headers */
-.wy-table-responsive thead th {
-    border: solid 1px #e1e4e5;
-    border-bottom: solid 2px #e1e4e5;
-}
 /* Fix table headers margin */
 .wy-table-responsive thead th p {
     margin-bottom: 0;
@@ -147,24 +195,18 @@ content .viewcode-back {
 .wy-table-responsive tbody tr th p {
     margin-bottom: 0;
 }
-/* Fix borders for row headers */
-.wy-table-responsive tbody tr th.stub {
-    border-right: solid 2px #e1e4e5;
-    border-bottom: solid 1px #e1e4e5;
-}
-.wy-table-responsive thead tr th.stub {
-    border-right: solid 2px #e1e4e5;
-}
-/*** Figure and table captions ***/
+
+/***** FIGURE AND TABLE CAPTIONS *****************************************/
 .wy-table caption, .rst-content table.docutils caption,
 .rst-content table.field-list caption, .rst-content div.figure p.caption {
     font-style: italic;
     font-size: 100%;
     font-weight: 100;
     font-family: "Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
-    color: #3F4444;
+    color: var(--black);
 }
 
+/***** JUPYTER SPHINX ****************************************************/
 /* Adjust appearance of jupyter-sphinx code cells */
 /* !important prevents jupyter-sphinx from overwriting them */
 div.jupyter_container {
@@ -174,7 +216,7 @@ div.jupyter_container {
     border: none !important;
 }
 .jupyter_container div.code_cell {
-    background: #F6F6F6 !important;
+    background: var(--light-grey) !important;
     border: 0px !important;
 }
 .jupyter_container div.code_cell pre {
@@ -197,12 +239,6 @@ div.jupyter_container {
 .document .jupyter_container div[class^='highlight'] {
     padding: 0 !important;
 }
-
-/* Disable copy-button in nbsphinx */
-.prompt a.copybtn {
-    display: none !important;
-}
-
 /* Some additional styling taken form the Jupyter notebook CSS */
 div.text_html table {
   border: none !important;
@@ -237,7 +273,13 @@ div.text_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2) !important;
 }
 
-/* Footer */
+/***** COPY-BUTTON *******************************************************/
+/* Disable copy-button in nbsphinx */
+.prompt a.copybtn {
+    display: none !important;
+}
+
+/***** FOOTER ************************************************************/
 footer ul {
   overflow: hidden;
   margin-bottom: 10px;
