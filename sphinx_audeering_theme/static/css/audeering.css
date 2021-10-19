@@ -99,7 +99,7 @@ body {
     margin-top: 12px;
 }
 /* Fix row margins for tables in docstrings */
-.rst-content dl table td p {
+.rst-content dl p {
     margin-bottom: 0px !important;
 }
 /* Fix border lines in table headers */
