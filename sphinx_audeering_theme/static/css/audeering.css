@@ -126,6 +126,16 @@ a:hover {
 content .viewcode-back {
     color: var(--red);
 }
+/* In line code */
+.rst-content tt.literal,
+.rst-content tt.literal,
+.rst-content code.literal {
+    color var: (--black);
+}
+/* Typing */
+.rst-content code.xref {
+    color var: (--black);
+}
 
 /***** DOWNLOAD BOX FOR JUPYTER NOTEBOOKS ********************************/
 .notebook {
