@@ -35,6 +35,11 @@ body {
     /* Ensure right part of scrren has same color as content */
     background: none;
 }
+.rst-content dl p, .rst-content dl table,
+.rst-content dl ul, .rst-content dl ol {
+    /* Decrease distance between paragraphs */
+    margin-bottom: 10px !important;
+}
  
 /***** LINKS *************************************************************/
 a {
