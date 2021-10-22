@@ -130,7 +130,6 @@ content .viewcode-back {
 /* In line code */
 .rst-content code {
     font-size: 87%;
-    font-weight: bold;
     padding: 1px;
 }
 .rst-content tt.literal,
