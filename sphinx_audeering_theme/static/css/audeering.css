@@ -45,6 +45,10 @@ a:visited {
 a:hover {
     color: var(--dark-red);
 }
+.fa {
+    /* Fix font of Gitlab/Github link */
+    font: inherit;
+}
 
 /***** SEARCH BAR ********************************************************/
 .wy-side-nav-search>a, .wy-side-nav-search .wy-dropdown>a {
