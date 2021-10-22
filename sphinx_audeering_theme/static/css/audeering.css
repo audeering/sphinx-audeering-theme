@@ -53,7 +53,7 @@ a:hover {
 }
 .fa {
     /* Fix font of Gitlab/Github link */
-    font: inherit;
+    font: inherit !important;
 }
 
 /***** SEARCH BAR ********************************************************/
