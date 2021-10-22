@@ -153,6 +153,18 @@ content .viewcode-back {
     /* Background color of every second table row */
     background-color: var(--light-grey);
 }
+.wy-table-bordered-all,
+.rst-content table.docutils {
+    border: 1px solid var(--grey);
+}
+.wy-table thead th,
+.rst-content table.docutils thead th,
+.rst-content table.field-list thead th {
+    border-bottom: solid 2px var(--grey);
+}
+.rst-content table.docutils th {
+    border-color: var(--grey);
+}
 .wy-table-bordered-all td,
 .rst-content table.docutils td {
     /* Color of table border */
@@ -214,16 +226,23 @@ div.jupyter_container {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
     border: none !important;
+    border-radius: 0 !important;
+    /* margin: 0; */
 }
 .jupyter_container div.code_cell {
     background: var(--light-grey) !important;
     border: 0px !important;
+    border-radius: 0 !important;
 }
 .jupyter_container div.code_cell pre {
     padding: 12px !important;
 }
-.jupyter_container div.cell_output {
+.jupyter_cell div.cell_output output {
     padding: 0 !important;
+}
+.jupyter_cell div.cell_output div.output div.highlight {
+    background-color: var(--white);
+    border: 1px solid var(--light-grey);
 }
 .jupyter_container div.highlight-default {
     padding: 0 !important;
