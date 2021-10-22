@@ -10,6 +10,7 @@
     --light-grey: #F6F6F6;  /* UI CANVAS GREY */
     --grey: #DCDCDC;  /* LIGHT GREY */
     --dark-grey: #7D8181;  /* UI INACTIVE GREY */
+    --darker-grey: #555A5A;
     /* Colors not used yet: */
     /* --grey3: #B9BEBE;  /* UI HIGH GREY */
     /* --grey5: #555A5A;  /* UI LOW GREY */
@@ -127,14 +128,61 @@ content .viewcode-back {
     color: var(--red);
 }
 /* In line code */
+.rst-content code {
+    font-size: 87%;
+    font-weight: bold;
+    padding: 1px;
+}
 .rst-content tt.literal,
 .rst-content tt.literal,
 .rst-content code.literal {
-    color var: (--black);
+    color: var(--darker-grey);
+    background-color: var(--light-grey);
+    border: none;
+    background-color: transparent;
 }
 /* Typing */
 .rst-content code.xref {
-    color var: (--black);
+    color: var(--darker-grey);
+    background-color: var(--light-grey);
+    border: none;
+    background-color: transparent;
+}
+/* Code parameter list */
+.py li p.strong {
+    background-color: var(--light-grey);
+    padding: 2px;
+}
+/* Force arguments to be in normal font in header */
+dl.class em,
+dl.function em,
+dl.method em,
+dl.property em {
+    font-style: normal;
+}
+/* Remove bullet points from parameter lists */
+.rst-content .section dl.class ul li {
+    list-style: none;
+    margin-left: 0;
+}
+/* Make heading of example section look like other sections */
+.rst-content dl.class p.rubric,
+.rst-content dl.function p.rubric,
+.rst-content dl.method p.rubric {
+    font-weight: bold;
+    color: var(--black);
+    border-left: solid 3px var(--grey);
+    border-top: none;
+    background: var(--light-grey);
+    display: table;
+    padding: 3px 6px;
+    font-size: 90%;
+}
+/* Fix indention of example box */
+.rst-content dl.class div.highlight,
+.rst-content dl.function div.highlight,
+.rst-content dl.method div.highlight {
+    margin-left: 24px;
 }
 
 /***** DOWNLOAD BOX FOR JUPYTER NOTEBOOKS ********************************/
