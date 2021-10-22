@@ -136,21 +136,14 @@ content .viewcode-back {
 .rst-content tt.literal,
 .rst-content code.literal {
     color: var(--darker-grey);
-    background-color: var(--light-grey);
     border: none;
     background-color: transparent;
 }
 /* Typing */
 .rst-content code.xref {
     color: var(--darker-grey);
-    background-color: var(--light-grey);
     border: none;
     background-color: transparent;
-}
-/* Code parameter list */
-.py li p.strong {
-    background-color: var(--light-grey);
-    padding: 2px;
 }
 /* Force arguments to be in normal font in header */
 dl.class em,
