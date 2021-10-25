@@ -4,8 +4,6 @@
     --white: #FFFFFF;
     --red: #E13B41;
     --red-opaque: rgba(225, 59, 65, 0.1);
-    --pink: #D6579B;
-    --pink-opaque: rgba(214, 87, 155, 0.1);
     --dark-red: #BB2A30;
     --light-grey: #F6F6F6;  /* UI CANVAS GREY */
     --grey: #DCDCDC;  /* LIGHT GREY */
@@ -111,10 +109,10 @@ a:hover {
     background: var(--light-grey);
 }
 .rst-content .attention {
-    background: var(--pink-opaque);
+    background: var(--red-opaque);
 }
 .rst-content .caution {
-    background: var(--pink-opaque);
+    background: var(--red-opaque);
 }
 .rst-content .danger {
     background: var(--red-opaque);
@@ -135,16 +133,16 @@ a:hover {
     background: var(--light-grey);
 }
 .rst-content .warning {
-    background: var(--pink-opaque);
+    background: var(--red-opaque);
 }
 .rst-content .admonition .admonition-title {
     background: var(--dark-grey);
 }
 .rst-content .attention .admonition-title {
-    background: var(--pink);
+    background: var(--red);
 }
 .rst-content .caution .admonition-title {
-    background: var(--pink);
+    background: var(--red);
 }
 .rst-content .danger .admonition-title {
     background: var(--red);
@@ -165,7 +163,7 @@ a:hover {
     background: var(--dark-grey);
 }
 .rst-content .warning .admonition-title {
-    background: var(--pink);
+    background: var(--red);
 }
 
 /****** CODE BLOCKS ******************************************************/
