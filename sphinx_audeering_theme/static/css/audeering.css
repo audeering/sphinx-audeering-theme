@@ -124,7 +124,7 @@ a:hover {
     background: var(--light-grey);
 }
 .rst-content .important {
-    background: var(--light-grey);
+    background: var(--red-opaque);
 }
 .rst-content .note {
     background: var(--light-grey);
@@ -154,7 +154,7 @@ a:hover {
     background: var(--dark-grey);
 }
 .rst-content .important .admonition-title {
-    background: var(--dark-grey);
+    background: var(--red);
 }
 .rst-content .note .admonition-title {
     background: var(--dark-grey);
