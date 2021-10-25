@@ -7,6 +7,20 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.1.0 (2021-10-25)
+--------------------------
+
+* Changed: use new logo, favicon and colors from audEERING homepage
+* Changed: link only to root of repo in Github/Gitlab links in the page header
+* Changed: ``pygments`` style to ``friendly``
+* Changed: remove border around code blocks
+* Changed: inline code has no longer a background color or border
+* Changed: let example section in API docs appear like other sections
+* Changed: remove bullet points in API listings
+* Changed: use only red or grey for admonitions
+* Fixed: bottom margin for table headers
+
+
 Version 1.0.14 (2021-07-27)
 ---------------------------
 
