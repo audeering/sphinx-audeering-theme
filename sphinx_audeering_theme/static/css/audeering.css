@@ -1,12 +1,10 @@
-/* audEERING colors */
-
 /***** COLOR DEFINITION **************************************************/
 :root {
     --black: #3F4444;
     --white: #FFFFFF;
     --red: #E13B41;
+    --red-opaque: rgba(225, 59, 65, 0.1);
     --dark-red: #BB2A30;
-    /* Grey, going from light to dark */
     --light-grey: #F6F6F6;  /* UI CANVAS GREY */
     --grey: #DCDCDC;  /* LIGHT GREY */
     --dark-grey: #7D8181;  /* UI INACTIVE GREY */
@@ -107,11 +105,65 @@ a:hover {
 }
 
 /***** ADMONITIONS (NOTES) ***********************************************/
-.rst-content .note .admonition-title {
-    background: var(--red);
+.rst-content .admonition {
+    background: var(--light-grey);
+}
+.rst-content .attention {
+    background: var(--red-opaque);
+}
+.rst-content .caution {
+    background: var(--red-opaque);
+}
+.rst-content .danger {
+    background: var(--red-opaque);
+}
+.rst-content .error {
+    background: var(--red-opaque);
+}
+.rst-content .hint {
+    background: var(--light-grey);
+}
+.rst-content .important {
+    background: var(--red-opaque);
 }
 .rst-content .note {
     background: var(--light-grey);
+}
+.rst-content .tip {
+    background: var(--light-grey);
+}
+.rst-content .warning {
+    background: var(--red-opaque);
+}
+.rst-content .admonition .admonition-title {
+    background: var(--dark-grey);
+}
+.rst-content .attention .admonition-title {
+    background: var(--red);
+}
+.rst-content .caution .admonition-title {
+    background: var(--red);
+}
+.rst-content .danger .admonition-title {
+    background: var(--red);
+}
+.rst-content .error .admonition-title {
+    background: var(--red);
+}
+.rst-content .hint .admonition-title {
+    background: var(--dark-grey);
+}
+.rst-content .important .admonition-title {
+    background: var(--red);
+}
+.rst-content .note .admonition-title {
+    background: var(--dark-grey);
+}
+.rst-content .tip .admonition-title {
+    background: var(--dark-grey);
+}
+.rst-content .warning .admonition-title {
+    background: var(--red);
 }
 
 /****** CODE BLOCKS ******************************************************/
