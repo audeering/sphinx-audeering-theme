@@ -306,13 +306,19 @@ dl.property em {
     margin-bottom: 12px;
     margin-top: 12px;
 }
+/* Fix margin in table cells */
+.wy-table td p:last-child,
+.rst-content table.docutils td p:last-child,
+.rst-content table.field-list td p:last-child {
+    margin-bottom: 0 !important;
+}
 /* Fix table headers margin */
 .wy-table-responsive thead th p {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 /* Fix table row headers margin */
 .wy-table-responsive tbody tr th p {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 
 /***** FIGURE AND TABLE CAPTIONS *****************************************/
