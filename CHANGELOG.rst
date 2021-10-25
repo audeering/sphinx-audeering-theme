@@ -7,6 +7,12 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.1.1 (2021-10-25)
+--------------------------
+
+* Fixed: bottom margin of paragraphs in API
+
+
 Version 1.1.0 (2021-10-25)
 --------------------------
 
