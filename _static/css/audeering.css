@@ -210,7 +210,7 @@ dl.property em {
     font-style: normal;
 }
 /* Remove bullet points from parameter lists */
-.rst-content .section dl.class ul li {
+.rst-content .section dl.field-list.simple ul li {
     list-style: none;
     margin-left: 0;
 }
