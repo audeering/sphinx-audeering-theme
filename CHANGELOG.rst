@@ -7,6 +7,13 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.1.3 (2021-10-28)
+--------------------------
+
+* Fixed: parameter list in API was still showing bullet points
+  for some documentations
+
+
 Version 1.1.2 (2021-10-25)
 --------------------------
 
