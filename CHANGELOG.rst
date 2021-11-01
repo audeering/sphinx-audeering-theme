@@ -7,6 +7,12 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.1.4 (2021-11-01)
+--------------------------
+
+* Changed: intend after first line in API parameter lists
+
+
 Version 1.1.3 (2021-10-28)
 --------------------------
 
