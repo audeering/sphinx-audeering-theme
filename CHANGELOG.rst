@@ -7,6 +7,14 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.1.5 (2021-12-17)
+--------------------------
+
+* Changed: link to infrastructure page in footer
+* Changed: use always bold, black font for inline code
+* Changed: use bold, black font for function/class name in API
+
+
 Version 1.1.4 (2021-11-01)
 --------------------------
 
