@@ -193,13 +193,10 @@ content .viewcode-back {
     background-color: transparent;
 }
 /* Function/Class definition names */
-.rst-content dl:not(.docutils) tt.descname,
-.rst-content dl:not(.docutils) tt.descclassname,
-.rst-content dl:not(.docutils) tt.descname,
-.rst-content dl:not(.docutils) code.descname,
-.rst-content dl:not(.docutils) tt.descclassname,
-.rst-content dl:not(.docutils) code.descclassname {
+.rst-content dl:not(.docutils) .descname,
+.rst-content dl:not(.docutils) .descclassname {
     color: var(--black);
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
 }
 dl.class em,
 dl.function em,
