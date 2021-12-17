@@ -91,18 +91,6 @@ a:hover {
     /* Color of TOC captions */
     color: var(--dark-grey);
 }
-.rst-content dl:not(.docutils) dt {
-    color: var(--red);
-    border-left: solid 3px var(--red);
-    border-top: none;
-    background: var(--light-grey);
-}
-.rst-content dl:not(.docutils) dl dt {
-    color: var(--black);
-    border-left: solid 3px var(--grey);
-    border-top: none;
-    background: var(--light-grey);
-}
 
 /***** ADMONITIONS (NOTES) ***********************************************/
 .rst-content .admonition {
@@ -204,13 +192,31 @@ content .viewcode-back {
     border: none;
     background-color: transparent;
 }
-/* Force arguments to be in normal font in header */
+/* Function/Class definition names */
+.rst-content dl:not(.docutils) .descname,
+.rst-content dl:not(.docutils) .descclassname {
+    color: var(--black);
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
+}
 dl.class em,
 dl.function em,
 dl.method em,
 dl.property em {
     font-style: normal;
 }
+.rst-content dl:not(.docutils) dt {
+    color: var(--red);
+    border-left: solid 3px var(--red);
+    border-top: none;
+    background: var(--light-grey);
+}
+.rst-content dl:not(.docutils) dl dt {
+    color: var(--black);
+    border-left: solid 3px var(--grey);
+    border-top: none;
+    background: var(--light-grey);
+}
+
 /* Remove bullet points from parameter lists */
 .rst-content .section dl.field-list.simple ul li {
     list-style: none;
