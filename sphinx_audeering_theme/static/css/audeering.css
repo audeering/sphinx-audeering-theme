@@ -8,12 +8,12 @@
     --light-grey: #F6F6F6;  /* UI CANVAS GREY */
     --grey: #DCDCDC;  /* LIGHT GREY */
     --dark-grey: #7D8181;  /* UI INACTIVE GREY */
-    --darker-grey: #555A5A;
-    /* Colors not used yet: */
+    /* Colors not used */
+    /* --darker-grey: #555A5A; 8?
     /* --grey3: #B9BEBE;  /* UI HIGH GREY */
     /* --grey5: #555A5A;  /* UI LOW GREY */
     /* --grey6: #363636; /* UI DARK GREY */
-    
+
 }
 
 /***** PAGE **************************************************************/
@@ -38,7 +38,7 @@ body {
     /* Decrease distance between paragraphs */
     margin-bottom: 10px !important;
 }
- 
+
 /***** LINKS *************************************************************/
 a {
     color: var(--red);
@@ -187,18 +187,20 @@ content .viewcode-back {
 /* In line code */
 .rst-content code {
     font-size: 87%;
+    font-weight: bold;
     padding: 1px;
 }
 .rst-content tt.literal,
 .rst-content tt.literal,
 .rst-content code.literal {
-    color: var(--darker-grey);
+    color: var(--black);
     border: none;
     background-color: transparent;
+    font-weight: bold;
 }
 /* Typing */
 .rst-content code.xref {
-    color: var(--darker-grey);
+    color: var(--black);
     border: none;
     background-color: transparent;
 }
@@ -387,8 +389,8 @@ div.text_html thead {
   border-bottom: 1px solid black !important;
   vertical-align: bottom !important;
 }
-div.text_html tr, 
-div.text_html th, 
+div.text_html tr,
+div.text_html th,
 div.text_html td {
   text-align: right !important;
   vertical-align: middle !important;
