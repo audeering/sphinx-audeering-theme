@@ -7,6 +7,12 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.1.7 (2022-01-25)
+--------------------------
+
+* Changed: link to infrastructure page in footer
+
+
 Version 1.1.6 (2022-01-03)
 --------------------------
 
