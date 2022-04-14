@@ -7,6 +7,12 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.1.8 (2022-04-14)
+--------------------------
+
+* Fixed: display italic text in docstrings as italic
+
+
 Version 1.1.7 (2022-01-25)
 --------------------------
 
