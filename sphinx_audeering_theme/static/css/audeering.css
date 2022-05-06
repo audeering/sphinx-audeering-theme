@@ -436,3 +436,12 @@ footer li {
 footer p {
   margin-bottom: 10px;
 }
+
+/***** MISCELLANEOUS *****************************************************/
+/* Fixes https://github.com/readthedocs/sphinx_rtd_theme/issues/996 */
+.wy-plain-list-disc li ul,
+.rst-content .section ul li ul,
+.rst-content .toctree-wrapper ul li ul,
+article ul li ul {
+  margin-bottom: 12px;
+}
