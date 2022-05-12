@@ -38,6 +38,12 @@ body {
     /* Decrease distance between paragraphs */
     margin-bottom: 10px !important;
 }
+/* Fix display of class properties in API */
+/* See: https://github.com/audeering/sphinx-audeering-theme/issues/57 */
+.rst-content dl:not(.docutils) .property {
+    display: contents;
+    padding-right: 0px;
+}
 
 /***** LINKS *************************************************************/
 a {
