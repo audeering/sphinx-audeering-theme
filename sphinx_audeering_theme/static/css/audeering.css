@@ -39,10 +39,15 @@ body {
     margin-bottom: 10px !important;
 }
 /* Fix display of class properties in API */
-/* See: https://github.com/audeering/sphinx-audeering-theme/issues/57 */
+/* https://github.com/audeering/sphinx-audeering-theme/issues/57 */
 .rst-content dl:not(.docutils) .property {
     display: contents;
     padding-right: 0px;
+}
+/* Fix bottom margin of nested bullet points */
+/* https://github.com/audeering/sphinx-audeering-theme/pull/56 */
+.rst-content .section ol p, .rst-content .section ul p {
+    margin-bottom: 0;
 }
 
 /***** LINKS *************************************************************/
