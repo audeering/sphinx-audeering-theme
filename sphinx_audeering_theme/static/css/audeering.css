@@ -41,8 +41,8 @@ body {
 /* Fix display of class properties in API */
 /* See: https://github.com/audeering/sphinx-audeering-theme/issues/57 */
 .rst-content dl:not(.docutils) .property {
-    display: contents;
-    padding-right: 0px;
+    display: revert;
+    padding-right: 4px;
 }
 
 /***** LINKS *************************************************************/
