@@ -7,6 +7,14 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.1.9 (2022-05-19)
+--------------------------
+
+* Fixed: reduced bottom margin of nested bullet points
+* Fixed: floating of class properties in API docs
+* Fixed: margin of class properties in API docs
+
+
 Version 1.1.8 (2022-04-14)
 --------------------------
 
