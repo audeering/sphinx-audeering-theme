@@ -7,6 +7,27 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.2.0 (2022-12-01)
+--------------------------
+
+* Added: support for Python 3.10
+* Added: "Research" link in footer
+* Changed: use new audEERING logo
+* Changed: mark extension safe
+  for parallel read and write
+* Changed: "Infrastructure" link
+  in footer now points
+  to http://devops.pp.audeering.com
+* Changed: rename "Infrastructure" link
+  in footer
+  to "Infra"
+* Changed: rename "Documentation" link
+  in footer
+  to "Docs"
+* Removed: dependency to ``sphinx_rtd_theme``;
+  the required source files are now included
+
+
 Version 1.1.9 (2022-05-19)
 --------------------------
 
