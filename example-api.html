@@ -25,12 +25,8 @@
     
 
   
-
-  
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/css/audeering.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/css/audeering.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -70,7 +66,7 @@
             
             
               <div class="version">
-                v1.1.9
+                v1.2.0
               </div>
             
           
@@ -99,8 +95,20 @@
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Example: API</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#theme">Theme</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#extract-zip">extract_zip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#theme">Theme</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sphinx.theming.Theme"><code class="docutils literal notranslate"><span class="pre">Theme</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sphinx.theming.Theme.cleanup"><code class="docutils literal notranslate"><span class="pre">Theme.cleanup()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sphinx.theming.Theme.get_config"><code class="docutils literal notranslate"><span class="pre">Theme.get_config()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sphinx.theming.Theme.get_options"><code class="docutils literal notranslate"><span class="pre">Theme.get_options()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sphinx.theming.Theme.get_theme_dirs"><code class="docutils literal notranslate"><span class="pre">Theme.get_theme_dirs()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#extract-zip">extract_zip</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sphinx.theming.extract_zip"><code class="docutils literal notranslate"><span class="pre">extract_zip()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="example-wide-pages.html">Example: wide pages</a></li>
@@ -143,7 +151,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="example-api">
-<h1>Example: API<a class="headerlink" href="#example-api" title="Permalink to this headline">¶</a></h1>
+<h1>Example: API<a class="headerlink" href="#example-api" title="Permalink to this heading">¶</a></h1>
 <p>You can include automatically generated API documentation
 from the doctsrings of your modules and functions.
 To provide this functionality
@@ -176,10 +184,10 @@ and add headers yourself you could use:</p>
 </div>
 <p>Which results in:</p>
 <div class="section" id="theme">
-<h2>Theme<a class="headerlink" href="#theme" title="Permalink to this headline">¶</a></h2>
+<h2>Theme<a class="headerlink" href="#theme" title="Permalink to this heading">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="sphinx.theming.Theme">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sphinx.theming.</span></span><span class="sig-name descname"><span class="pre">Theme</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">theme_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">factory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sphinx.theming.HTMLThemeFactory</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sphinx.theming.Theme" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sphinx.theming.</span></span><span class="sig-name descname"><span class="pre">Theme</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">theme_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">factory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">HTMLThemeFactory</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sphinx.theming.Theme" title="Permalink to this definition">¶</a></dt>
 <dd><p>A Theme is a set of HTML templates and configurations.</p>
 <p>This class supports both theme directory and theme archive (zipped theme).</p>
 <dl class="py method">
@@ -190,7 +198,7 @@ and add headers yourself you could use:</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="sphinx.theming.Theme.get_config">
-<span class="sig-name descname"><span class="pre">get_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">section:</span> <span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name:</span> <span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default:</span> <span class="pre">typing.Any</span> <span class="pre">=</span> <span class="pre">&lt;object</span> <span class="pre">object&gt;</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#sphinx.theming.Theme.get_config" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">section:</span> <span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name:</span> <span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default:</span> <span class="pre">~typing.Any</span> <span class="pre">=</span> <span class="pre">&lt;object</span> <span class="pre">object&gt;</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#sphinx.theming.Theme.get_config" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the value for a theme configuration setting, searching the
 base theme chain.</p>
 </dd></dl>
@@ -212,7 +220,7 @@ then the base theme’s, then that one’s base theme’s, etc.</p>
 
 </div>
 <div class="section" id="extract-zip">
-<h2>extract_zip<a class="headerlink" href="#extract-zip" title="Permalink to this headline">¶</a></h2>
+<h2>extract_zip<a class="headerlink" href="#extract-zip" title="Permalink to this heading">¶</a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="sphinx.theming.extract_zip">
 <span class="sig-prename descclassname"><span class="pre">sphinx.theming.</span></span><span class="sig-name descname"><span class="pre">extract_zip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">targetdir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#sphinx.theming.extract_zip" title="Permalink to this definition">¶</a></dt>
@@ -245,7 +253,7 @@ then the base theme’s, then that one’s base theme’s, etc.</p>
         
         
         
-          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2022/05/19 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
+          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2022/12/01 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
         
     </p>
   </div>
@@ -280,7 +288,9 @@ then the base theme’s, then that one’s base theme’s, etc.</p>
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
     
 
   
