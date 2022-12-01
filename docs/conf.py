@@ -22,6 +22,7 @@ extensions = [
 ]
 linkcheck_ignore = [
     'https://sphinx-doc.org',
+    'http://devops.pp.audeering.com',
 ]
 
 # HTML --------------------------------------------------------------------
