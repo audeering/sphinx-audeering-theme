@@ -81,6 +81,8 @@ def setup(app):
     app.add_html_theme('sphinx_audeering_theme',
                        os.path.abspath(os.path.dirname(__file__)))
 
+    return {'parallel_read_safe': True, 'parallel_write_safe': True}
+
 
 def _run(shell_command):
     """Return the output of a shell command provided as string."""
