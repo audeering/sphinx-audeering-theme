@@ -7,6 +7,13 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.2.1 (2022-12-01)
+--------------------------
+
+* Fixed: font files weren't included
+  in Python package
+
+
 Version 1.2.0 (2022-12-01)
 --------------------------
 
