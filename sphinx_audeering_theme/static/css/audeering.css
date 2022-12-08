@@ -350,7 +350,7 @@ dl.property dt em {
     border-top: 1px solid var(--grey);
     border-bottom: 1px solid var(--grey);
 }
-.rst-content table.docutils td {
+.rst-content table.autosummary td {
     border-left: none;
 }
 .rst-content table.autosummary:not(.field-list) tr:nth-child(2n-1) td {
