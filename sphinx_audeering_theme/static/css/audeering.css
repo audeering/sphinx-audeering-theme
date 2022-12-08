@@ -8,6 +8,7 @@
     --light-grey: #F6F6F6;  /* UI CANVAS GREY */
     --grey: #DCDCDC;  /* LIGHT GREY */
     --dark-grey: #7D8181;  /* UI INACTIVE GREY */
+    --purple: #AF67DF;
     /* Colors not used */
     /* --darker-grey: #555A5A; 8?
     /* --grey3: #B9BEBE;  /* UI HIGH GREY */
@@ -165,120 +166,6 @@ a:hover {
     background: var(--red);
 }
 
-/****** CODE BLOCKS ******************************************************/
-.rst-content .highlight {
-    background: var(--light-grey);
-}
-.rst-content div[class^='highlight'] {
-    border-radius: 3px;
-    border: 0px;
-}
-.rst-content .highlight .gp {
-    color: var(--red);
-}
-/* Link to code and back */
-.rst-content .viewcode-link, .rst-content .viewcode-back {
-    color: var(--red);
-}
-content .viewcode-back {
-    color: var(--red);
-}
-/* In line code */
-.rst-content code {
-    font-size: 87%;
-    font-weight: bold;
-    padding: 1px;
-}
-.rst-content tt.literal,
-.rst-content tt.literal,
-.rst-content code.literal {
-    color: var(--black);
-    border: none;
-    background-color: transparent;
-    font-weight: bold;
-}
-/* Typing */
-.rst-content code.xref {
-    color: var(--black);
-    border: none;
-    background-color: transparent;
-}
-/* Function/Class definition names */
-.rst-content dl:not(.docutils) .descname,
-.rst-content dl:not(.docutils) .descclassname {
-    color: var(--black);
-    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
-}
-dl.class dt em,
-dl.function dt em,
-dl.method dt em,
-dl.property dt em {
-    font-style: normal;
-}
-.rst-content dl:not(.docutils) dt {
-    color: var(--red);
-    border-left: solid 3px var(--red);
-    border-top: none;
-    background: var(--light-grey);
-}
-.rst-content dl:not(.docutils) dl dt {
-    color: var(--black);
-    border-left: solid 3px var(--grey);
-    border-top: none;
-    background: var(--light-grey);
-}
-
-/* Remove bullet points from parameter lists */
-.rst-content .section dl.field-list.simple ul li {
-    list-style: none;
-    margin-left: 24px;
-    /* Don't indent first line of text, see */
-    /* https://gitlab.audeering.com/project/altavista-cc/tests/-/issues/19 */
-    text-indent: -24px;
-}
-/* Make heading of example section look like other sections */
-.rst-content dl.class p.rubric,
-.rst-content dl.function p.rubric,
-.rst-content dl.method p.rubric {
-    font-weight: bold;
-    color: var(--black);
-    border-left: solid 3px var(--grey);
-    border-top: none;
-    background: var(--light-grey);
-    display: table;
-    padding: 3px 6px;
-    font-size: 90%;
-}
-/* Fix indention of example box */
-.rst-content dl.class div.highlight,
-.rst-content dl.function div.highlight,
-.rst-content dl.method div.highlight {
-    margin-left: 24px;
-}
-
-/***** DOWNLOAD BOX FOR JUPYTER NOTEBOOKS ********************************/
-.notebook {
-    background: var(--light-grey);
-}
-.notebook a {
-    padding: 12px;
-    padding-bottom: 9px;
-    line-height: 24px;
-    margin-bottom: 24px;
-    display: block;
-    font-size: 1.125rem;
-    color: var(--black);
-    font-weight: bold;
-    border-bottom: 3px solid transparent;
-}
-.notebook a::before {
-    content: "\2193 ";
-    color: var(--red);
-}
-.notebook a:hover {
-    border-bottom: 3px solid var(--red);
-}
-
 /***** TABLES ************************************************************/
 .wy-table-odd td,
 .wy-table-striped tr:nth-child(2n-1) td,
@@ -351,6 +238,147 @@ dl.property dt em {
     font-weight: 100;
     font-family: "Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
     color: var(--black);
+}
+
+/****** CODE BLOCKS ******************************************************/
+.rst-content .highlight {
+    background: var(--light-grey);
+}
+.rst-content div[class^='highlight'] {
+    border-radius: 3px;
+    border: 0px;
+}
+.rst-content .highlight .gp {
+    color: var(--red);
+}
+/* Link to code and back */
+.rst-content .viewcode-link, .rst-content .viewcode-back {
+    color: var(--red);
+}
+content .viewcode-back {
+    color: var(--red);
+}
+/* In line code */
+.rst-content code {
+    font-size: 87%;
+    font-weight: bold;
+    padding: 1px;
+}
+.rst-content tt.literal,
+.rst-content tt.literal,
+.rst-content code.literal {
+    color: var(--black);
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+/* Typing */
+.rst-content code.xref {
+    color: var(--black);
+    border: none;
+    background-color: transparent;
+}
+/* ============================================ */
+/* API Function/Class                           */
+/* ============================================ */
+/*                                              */
+/* -------------------------------------------- */
+/* API Function/Class header line               */
+/* -------------------------------------------- */
+/*                                              */
+/* class module.Class(arg, *, kwarg=None)       */
+/*                                              */
+.rst-content dl:not(.docutils) dt {
+    color: var(--black);
+    border: none;
+    background: none;
+}
+/* class module.Class(arg, *, kwarg=None)       */
+/*                    ^                         */
+.rst-content dl:not(.docutils) .default_value {
+    color: var(--dark-grey);
+}
+/* class module.Class(arg, *, kwarg=None)       */
+/*       ^                                      */
+.rst-content dl:not(.docutils) .descclassname {
+    color: var(--black);
+    font-size: 100%;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
+}
+/* class module.Class(arg, *, kwarg=None)       */
+/*              ^                               */
+.rst-content dl:not(.docutils) .descname {
+    color: var(--purple);
+    font-size: 1.2em;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
+}
+/* class module.Class(arg, *, kwarg=None)       */
+/* ^                  ^       ^                 */
+dl.class dt em,
+dl.function dt em,
+dl.method dt em,
+dl.property dt em {
+    font-style: italic;
+}
+/* -------------------------------------------- */
+/* API Function/Class body                      */
+/* -------------------------------------------- */
+/*                                              */
+/* "Parameters", "Returns", "Raises",   entries */
+.rst-content dl:not(.docutils) dl dt {
+    color: var(--black);
+    border: none;
+    background: none;
+}
+/* Remove bullet points from "Parameters" lists */
+.rst-content .section dl.field-list.simple ul li {
+    list-style: none;
+    margin-left: 24px;
+    /* Don't indent first line of text, see     */
+    /* https://gitlab.audeering.com/project/altavista-cc/tests/-/issues/19 */
+    text-indent: -24px;
+}
+/* Enfore black colors for links inside body    */
+.rst-content dl:not(.docutils) dl dt a.reference {
+    color: var(--black);
+}
+/* "Methods, Properties, Attributes" table      */
+/* NOTE: this is only relevant if autosummary   */
+/* is used to include these tables              */
+.rst-content table.autosummary {
+    border: none;
+    border-top: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
+}
+.rst-content table.docutils td {
+    border-left: none;
+}
+.rst-content table.autosummary:not(.field-list) tr:nth-child(2n-1) td {
+    background-color: var(--white);
+}
+
+
+/***** DOWNLOAD BOX FOR JUPYTER NOTEBOOKS ********************************/
+.notebook {
+    background: var(--light-grey);
+}
+.notebook a {
+    padding: 12px;
+    padding-bottom: 9px;
+    line-height: 24px;
+    margin-bottom: 24px;
+    display: block;
+    font-size: 1.125rem;
+    color: var(--black);
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+}
+.notebook a::before {
+    content: "\2193 ";
+    color: var(--red);
+}
+.notebook a:hover {
+    border-bottom: 3px solid var(--red);
 }
 
 /***** JUPYTER SPHINX ****************************************************/
