@@ -9,6 +9,10 @@
     --grey: #DCDCDC;  /* LIGHT GREY */
     --dark-grey: #7D8181;  /* UI INACTIVE GREY */
     --purple: #AF67DF;
+    --danger: #E94274;  /* pink */
+    --warning: #F0AA3A;  /* orange */
+    --success: #35E17A;  /* green */
+    --info: #32ADF2;  /* blue */
     /* Colors not used */
     /* --darker-grey: #555A5A; 8?
     /* --grey3: #B9BEBE;  /* UI HIGH GREY */
@@ -308,7 +312,7 @@ content .viewcode-back {
 /* class module.Class(arg, *, kwarg=None)       */
 /*              ^                               */
 .rst-content dl:not(.docutils) .descname {
-    color: var(--purple);
+    color: var(--info);
     font-size: 1.2em;
     font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
 }
