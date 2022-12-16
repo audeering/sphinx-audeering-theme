@@ -1,4 +1,6 @@
-/***** COLOR DEFINITION **************************************************/
+/* ===================================================================== */
+/* ===== COLOR DEFINITION ============================================== */
+/* ===================================================================== */
 :root {
     --black: #3F4444;
     --white: #FFFFFF;
@@ -21,41 +23,61 @@
 
 }
 
-/***** PAGE **************************************************************/
+
+/* ===================================================================== */
+/* ===== PAGE ========================================================== */
+/* ===================================================================== */
+
+/* Main text color
+ */
 body {
-    /* Main text color */
     color: var(--black);
 }
+
+/* Background color of whole page
+ */
 .wy-body-for-nav {
-    /* Background color of whole page */
     background: var(--white);
 }
+
+/* Background color of content part
+ */
 .wy-nav-content {
-    /* background color of content part */
     background: var(--white);
 }
+
+/* Ensure right part of scrren has same color as content
+ */
 .wy-nav-content-wrap {
-    /* Ensure right part of scrren has same color as content */
     background: none;
 }
+
+/* Decrease distance between paragraphs
+ */
 .rst-content dl p, .rst-content dl table,
 .rst-content dl ul, .rst-content dl ol {
-    /* Decrease distance between paragraphs */
     margin-bottom: 10px !important;
 }
-/* Fix display of class properties in API */
-/* https://github.com/audeering/sphinx-audeering-theme/issues/57 */
+
+/* Fix display of class properties in API
+ * https://github.com/audeering/sphinx-audeering-theme/issues/57
+ */
 .rst-content dl:not(.docutils) .property {
     display: revert;
     padding-right: 4px;
 }
-/* Fix bottom margin of nested bullet points */
-/* https://github.com/audeering/sphinx-audeering-theme/pull/56 */
+
+/* Fix bottom margin of nested bullet points
+ * https://github.com/audeering/sphinx-audeering-theme/pull/56
+ */
 .rst-content .section ol p, .rst-content .section ul p {
     margin-bottom: 0;
 }
 
-/***** LINKS *************************************************************/
+
+/* ===================================================================== */
+/* ===== LINKS ========================================================= */
+/* ===================================================================== */
 a {
     color: var(--red);
 }
@@ -70,7 +92,10 @@ a:hover {
     font: inherit !important;
 }
 
-/***** SEARCH BAR ********************************************************/
+
+/* ===================================================================== */
+/* ===== SEARCH BAR ==================================================== */
+/* ===================================================================== */
 .wy-side-nav-search>a, .wy-side-nav-search .wy-dropdown>a {
     color: var(--white);
 }
@@ -81,7 +106,10 @@ a:hover {
     border-color: var(--red);
 }
 
-/***** SIDE BAR ***********************************************************/
+
+/* ===================================================================== */
+/* ===== SIDE BAR ====================================================== */
+/* ===================================================================== */
 .wy-nav-side {
     /* Background color of TOC menu */
     background-color: var(--black);
@@ -108,7 +136,10 @@ a:hover {
     color: var(--dark-grey);
 }
 
-/***** ADMONITIONS (NOTES) ***********************************************/
+
+/* ===================================================================== */
+/* ===== ADMONITIONS (NOTES) =========================================== */
+/* ===================================================================== */
 .rst-content .admonition {
     background: var(--light-grey);
 }
@@ -170,7 +201,10 @@ a:hover {
     background: var(--red);
 }
 
-/***** TABLES ************************************************************/
+
+/* ===================================================================== */
+/* ===== TABLES ======================================================== */
+/* ===================================================================== */
 .wy-table-odd td,
 .wy-table-striped tr:nth-child(2n-1) td,
 .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td {
@@ -234,7 +268,10 @@ a:hover {
     margin-bottom: 0 !important;
 }
 
-/***** FIGURE AND TABLE CAPTIONS *****************************************/
+
+/* ===================================================================== */
+/* ===== FIGURE AND TABLE CAPTIONS ===================================== */
+/* ===================================================================== */
 .wy-table caption, .rst-content table.docutils caption,
 .rst-content table.field-list caption, .rst-content div.figure p.caption {
     font-style: italic;
@@ -244,7 +281,10 @@ a:hover {
     color: var(--black);
 }
 
-/****** CODE BLOCKS ******************************************************/
+
+/* ===================================================================== */
+/* ===== CODE BLOCKS =================================================== */
+/* ===================================================================== */
 .rst-content .highlight {
     background: var(--light-grey);
 }
@@ -282,73 +322,101 @@ content .viewcode-back {
     border: none;
     background-color: transparent;
 }
-/* ============================================ */
-/* API Function/Class                           */
-/* ============================================ */
-/*                                              */
-/* -------------------------------------------- */
-/* API Function/Class header line               */
-/* -------------------------------------------- */
-/*                                              */
-/* class module.Class(arg, *, kwarg=None)       */
-/*                                              */
+
+
+/* ===================================================================== */
+/* ===== API FUNCTION/CLASS ============================================ */
+/* ===================================================================== */
+
+/* --------------------------------------------------------------------- */
+/* ----- API FUNCTION/CLASS SIGNATURE ---------------------------------- */
+/* --------------------------------------------------------------------- */
+
+/* The following deals with the SIGNATURE
+ * of a class or function definition.
+ * In each case,
+ * an arrow beneath an example signature
+ * shows which part is affected
+ * by the CSS section.
+ * No arrow indicates the whole signature
+ * is affected.
+ */
+
+/* class module.Class(arg, *, kwarg=None)
+ *
+ */
 .rst-content dl:not(.docutils) dt {
     color: var(--black);
     border: none;
     background: none;
 }
-/* class module.Class(arg, *, kwarg=None)       */
-/*                    ^                         */
+
+/* class module.Class(arg, *, kwarg=None)
+ *                    ^
+ */
 .rst-content dl:not(.docutils) .default_value {
     color: var(--dark-grey);
 }
-/* class module.Class(arg, *, kwarg=None)       */
-/*       ^                                      */
+
+/* class module.Class(arg, *, kwarg=None)
+ *       ^
+ */
 .rst-content dl:not(.docutils) .descclassname {
     color: var(--black);
     font-size: 100%;
     font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
 }
-/* class module.Class(arg, *, kwarg=None)       */
-/*              ^                               */
+
+/* class module.Class(arg, *, kwarg=None)
+ *              ^
+ */
 .rst-content dl:not(.docutils) .descname {
-    color: var(--info);
+    color: var(--red);
     font-size: 1.2em;
     font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
 }
-/* class module.Class(arg, *, kwarg=None)       */
-/* ^                  ^       ^                 */
+
+/* class module.Class(arg, *, kwarg=None)
+ * ^                  ^       ^
+ */
 dl.class dt em,
 dl.function dt em,
 dl.method dt em,
 dl.property dt em {
     font-style: italic;
 }
-/* -------------------------------------------- */
-/* API Function/Class body                      */
-/* -------------------------------------------- */
-/*                                              */
-/* "Parameters", "Returns", "Raises",   entries */
+
+/* --------------------------------------------------------------------- */
+/* ----- API FUNCTION/CLASS BODY --------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+/* The CSS settings in this section
+ * deal with the body
+ * of the class/function docstring.
+ */
+
+/* PARAMETERS, RETURNS, RAISES entries
+ */
 .rst-content dl:not(.docutils) dl dt {
     color: var(--black);
     border: none;
     background: none;
 }
-/* Remove bullet points from "Parameters" lists */
+
+/* Remove bullet points from PARAMETERS lists
+ */
 .rst-content .section dl.field-list.simple ul li {
     list-style: none;
     margin-left: 24px;
-    /* Don't indent first line of text, see     */
-    /* https://gitlab.audeering.com/project/altavista-cc/tests/-/issues/19 */
+    /* Don't indent first line of text, see
+     * https://gitlab.audeering.com/project/altavista-cc/tests/-/issues/19
+     */
     text-indent: -24px;
 }
-/* Enfore black colors for links inside body    */
-.rst-content dl:not(.docutils) dl dt a.reference {
-    color: var(--black);
-}
-/* "Methods, Properties, Attributes" table      */
-/* NOTE: this is only relevant if autosummary   */
-/* is used to include these tables              */
+
+/* Styling of METHODS, PROPERTIES, ATTRIBUTES table
+ * added by autosummary
+ */
 .rst-content table.autosummary {
     border: none;
     border-top: 1px solid var(--grey);
@@ -361,8 +429,17 @@ dl.property dt em {
     background-color: var(--white);
 }
 
+/* RAISES entries
+ */
+.rst-content dl:not(.docutils) dd p a.reference {
+    color: var(--black);
+}
 
-/***** DOWNLOAD BOX FOR JUPYTER NOTEBOOKS ********************************/
+
+/* ===================================================================== */
+/* ===== DOWNLOAD BOX FOR JUPYTER NOTEBOOKS ============================ */
+/* ===================================================================== */
+
 .notebook {
     background: var(--light-grey);
 }
@@ -385,9 +462,14 @@ dl.property dt em {
     border-bottom: 3px solid var(--red);
 }
 
-/***** JUPYTER SPHINX ****************************************************/
-/* Adjust appearance of jupyter-sphinx code cells */
-/* !important prevents jupyter-sphinx from overwriting them */
+
+/* ===================================================================== */
+/* ===== JUPYTER SPHINX ================================================ */
+/* ===================================================================== */
+
+/* Adjust appearance of jupyter-sphinx code cells
+ * !important prevents jupyter-sphinx from overwriting them
+ */
 div.jupyter_container {
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
@@ -425,7 +507,9 @@ div.jupyter_container {
 .document .jupyter_container div[class^='highlight'] {
     padding: 0 !important;
 }
-/* Some additional styling taken form the Jupyter notebook CSS */
+
+/* Some additional styling taken form the Jupyter notebook CSS
+ */
 div.text_html table {
   border: none !important;
   border-collapse: collapse !important;
@@ -459,13 +543,21 @@ div.text_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2) !important;
 }
 
-/***** COPY-BUTTON *******************************************************/
-/* Disable copy-button in nbsphinx */
+
+/* ===================================================================== */
+/* ===== COPY-BUTTON =================================================== */
+/* ===================================================================== */
+
+/* Disable copy-button in nbsphinx
+ */
 .prompt a.copybtn {
     display: none !important;
 }
 
-/***** FOOTER ************************************************************/
+
+/* ===================================================================== */
+/* ===== FOOTER ======================================================== */
+/* ===================================================================== */
 footer ul {
   overflow: hidden;
   margin-bottom: 10px;
