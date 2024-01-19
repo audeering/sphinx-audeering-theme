@@ -1,5 +1,5 @@
 ======================
-Sphinx audEERING theme
+sphinx-audeering-theme
 ======================
 
 |tests| |docs| |python-versions| |license| 
