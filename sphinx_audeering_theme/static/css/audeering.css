@@ -371,6 +371,11 @@ table.preview th p {
     border-left: none;
     border-bottom: none;
 }
+table.clickable tr.clicked td:not(.expanded-row-content):not(:first-child) {
+    /* Remove left border on clicked row when preview is shown,
+     * without changing position of the text */
+    border-left: 1px solid transparent;
+}
 
 /***** FIGURE AND TABLE CAPTIONS *****************************************/
 .wy-table caption, .rst-content table.docutils caption,
