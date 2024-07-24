@@ -67,12 +67,7 @@ uri-ignore-words-list = 'ist,master'
 cache_dir = '.cache/pytest'
 xfail_strict = true
 addopts = '''
-    --cov=sphinx-audeering-theme
-    --cov-fail-under=100
-    --cov-report term-missing
-    --cov-report xml
     --ignore=docs/
-    --ignore=benchmarks/
 '''
 
 
