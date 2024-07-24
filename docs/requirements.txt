@@ -1,3 +1,4 @@
+audeer
 sphinx
 sphinx-audeering-theme
 toml
