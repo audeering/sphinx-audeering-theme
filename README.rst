@@ -34,7 +34,7 @@ Have a look at the installation_ and usage_ instructions as a starting point.
     :target: https://audeering.github.io/sphinx-audeering-theme/
     :alt: sphinx-audeering-theme's documentation
 .. |license| image:: https://img.shields.io/badge/license-MIT-green.svg
-    :target: https://github.com/audeering/sphinx-audeering-theme/blob/master/LICENSE
+    :target: https://github.com/audeering/sphinx-audeering-theme/blob/main/LICENSE
     :alt: sphinx-audeering-theme's MIT license
 .. |python-versions| image:: https://img.shields.io/pypi/pyversions/sphinx-audeering-theme.svg
     :target: https://pypi.org/project/sphinx-audeering-theme/

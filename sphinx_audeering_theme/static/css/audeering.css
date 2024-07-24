@@ -30,7 +30,7 @@ body {
     background: var(--white);
 }
 .wy-nav-content-wrap {
-    /* Ensure right part of scrren has same color as content */
+    /* Ensure right part of screen has same color as content */
     background: none;
 }
 .rst-content dl p, .rst-content dl table,
@@ -249,7 +249,7 @@ dl.property dt em {
     padding: 3px 6px;
     font-size: 90%;
 }
-/* Fix indention of example box */
+/* Fix indentation of example box */
 .rst-content dl.class div.highlight,
 .rst-content dl.function div.highlight,
 .rst-content dl.method div.highlight {
