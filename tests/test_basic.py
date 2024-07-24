@@ -1,7 +1,7 @@
-from distutils.version import LooseVersion
-
 import pytest
 from sphinx import __version__
+
+from audeer import LooseVersion
 
 import sphinx_audeering_theme
 
