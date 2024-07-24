@@ -343,11 +343,6 @@ dl.property dt em {
 }
 
 /***** TABLE PREVIEW in AUDBCARDS ****************************************/
-.rst-content table.docutils:not(.field-list) tr.clickable:hover td,
-.rst-content table.docutils:not(.field-list) tr.clickable:hover th {
-    /* Change color of table row for mouse hover */
-    background-color: #e3e3e3;
-}
 .rst-content table.docutils:not(.field-list) tr.clickable table.preview tr:nth-child(2n-1) td {
     /* Don't style odd and even rows differently in preview table */
     background-color: inherit;
