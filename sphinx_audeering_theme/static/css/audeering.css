@@ -362,6 +362,15 @@ table.preview th p {
     /* Adjust font size of header in preview table to table content */
     font-size: 13px;
 }
+.rst-content table.docutils:not(.field-list) tr.clickable td.expanded-row-content {
+    /* Remove double border on left side of cell holding preview table */
+    border-left: none;
+}
+.rst-content table.docutils:not(.field-list) tr.clickable td table.preview td {
+    /* Remove complete border in preview table cells */
+    border-left: none;
+    border-bottom: none;
+}
 
 /***** FIGURE AND TABLE CAPTIONS *****************************************/
 .wy-table caption, .rst-content table.docutils caption,
