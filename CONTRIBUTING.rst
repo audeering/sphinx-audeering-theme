@@ -18,7 +18,7 @@ you should get the newest development version from Github_::
 
    git clone https://github.com/audeering/sphinx-audeering-theme/
    cd sphinx-audeering-theme
-   # Create virutal environment for this project
+   # Create virtual environment for this project
    # e.g.
    # virtualenv --python="python3"  $HOME/.envs/sphinx-audeering-theme
    # source $HOME/.envs/sphinx-audeering-theme/bin/activate
@@ -37,9 +37,11 @@ Coding Convention
 -----------------
 
 We follow the PEP8_ convention for Python code
-and check for correct syntax with flake8_.
-Exceptions are defined under the ``[flake8]`` section
-in :file:`setup.cfg`.
+and check for correct syntax with ruff_.
+In addition,
+we check for common spelling errors with codespell_.
+Both tools and possible exceptions
+are defined in :file:`pyproject.toml`.
 
 The checks are executed in the CI using `pre-commit`_.
 You can enable those checks locally by executing::
@@ -48,23 +50,25 @@ You can enable those checks locally by executing::
     pre-commit install
     pre-commit run --all-files
 
-Afterwards flake8_ is executed
+Afterwards ruff_ and codespell_ are executed
 every time you create a commit.
 
-You can also install flake8_
+You can also install ruff_ and codespell_
 and call it directly::
 
-    pip install flake8  # consider system wide installation
-    flake8
+    pip install ruff codespell  # consider system wide installation
+    ruff check .
+    codespell
 
 It can be restricted to specific folders::
 
-    flake8 audfoo/ tests/
+    ruff check sphinx_audeering_theme/ tests/
+    codespell sphinx_audeering_theme/ tests/
 
+.. _codespell: https://github.com/codespell-project/codespell/
 .. _PEP8: http://www.python.org/dev/peps/pep-0008/
-.. _flake8: https://flake8.pycqa.org/en/latest/index.html
 .. _pre-commit: https://pre-commit.com
-
+.. _ruff: https://beta.ruff.rs
 
 Building the Documentation
 --------------------------
@@ -86,7 +90,7 @@ It is also possible to automatically check if all links are still valid::
 
    python -m sphinx docs/ build/sphinx/html -b linkcheck
 
-.. _Sphinx: https://sphinx-doc.org/
+.. _Sphinx: https://sphinx-doc.org
 
 
 Running the Tests
