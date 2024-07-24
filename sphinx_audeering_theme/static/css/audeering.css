@@ -306,7 +306,6 @@ dl.property dt em {
 }
 .wy-table-responsive thead th {
     /* Fix border lines in table headers */
-    border: solid 1px var(--grey);
     border-bottom: solid 2px var(--grey);
 }
 .wy-table-responsive tbody tr th.stub {
