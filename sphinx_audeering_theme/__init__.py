@@ -1,4 +1,5 @@
 """audEERING Sphinx theme."""
+
 import os
 import re
 import subprocess
