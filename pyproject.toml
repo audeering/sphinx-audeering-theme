@@ -29,8 +29,7 @@ classifiers = [
     'Topic :: Scientific/Engineering',
 ]
 dependencies = [
-    'sphinx >=5.1.0, <7.0.0',  # https://github.com/readthedocs/readthedocs.org/issues/10279
-    'docutils <0.17',  # https://github.com/sphinx-doc/sphinx/issues/9088
+    'sphinx >=6.0.0, <7.0.0',
 ]
 # Get version dynamically from git
 # (needs setuptools_scm tools config below)
