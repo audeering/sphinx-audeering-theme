@@ -14,6 +14,7 @@ Version 1.4.0 (2026-01-02)
 * Changed: depend on ``sphinx>=6.0.0``
 * Removed: support for Python 3.8
 * Removed: support for Python 3.9
+* Fixed: CSS styling with ``docutils>=0.17``
 
 
 Version 1.3.0 (2024-07-25)
@@ -24,7 +25,6 @@ Version 1.3.0 (2024-07-25)
 * Added: support for Python 3.11
 * Changed: require ``sphinx<7.0.0``
 * Removed: support for Python 3.7
-* Fixed: CSS styling with ``docutils>=0.17``
 
 
 Version 1.2.1 (2022-12-01)
