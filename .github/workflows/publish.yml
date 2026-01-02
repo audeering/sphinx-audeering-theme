@@ -40,7 +40,7 @@ jobs:
       run: uv sync
 
     - name: Build documentation
-      run: uv run sphinx docs/ docs/_build/ -b html
+      run: uv run python -m sphinx docs/ docs/_build/ -b html
 
     - name: Deploy documentation to Github pages
       uses: peaceiris/actions-gh-pages@v4
