@@ -44,6 +44,16 @@ repository = 'https://github.com/audeering/sphinx-audeering-theme/'
 documentation = 'https://audeering.github.io/sphinx-audeering-theme/'
 
 
+# ===== DEPENDENCY GROUPS =================================================
+#
+[dependency-groups]
+dev = [
+    'audeer',
+    'pytest',
+    'toml',
+]
+
+
 # ===== BUILD-SYSTEM ======================================================
 #
 # Requirements for building the Python package
