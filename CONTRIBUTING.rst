@@ -51,7 +51,7 @@ Afterwards ruff_ and codespell_ are executed
 every time you create a commit.
 
 You can also install ruff_ and codespell_
-and call it directly::
+and call them directly::
 
     uvx ruff check .
     uvx codespell
@@ -76,7 +76,7 @@ To create the HTML pages, use::
    uv run python -m sphinx docs/ build/html -b html
 
 The generated files will be available
-in the directory :file:`build/sphinx/html/`.
+in the directory :file:`build/html/`.
 
 It is also possible to automatically check if all links are still valid::
 
