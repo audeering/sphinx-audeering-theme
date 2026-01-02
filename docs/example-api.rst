@@ -46,10 +46,6 @@ Theme
 .. autoclass:: sphinx.theming.Theme
     :members:
 
-extract_zip
------------
-
-.. autofunction:: sphinx.theming.extract_zip
 
 .. _sphinx.ext.autodoc:
     http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
