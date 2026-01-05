@@ -7,6 +7,12 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.4.1 (2026-01-05)
+--------------------------
+
+* Fixed: ensure the same CSS styling for new section entries
+
+
 Version 1.4.0 (2026-01-02)
 --------------------------
 
