@@ -49,20 +49,6 @@ body {
 .rst-content section ol p, .rst-content section ul p {
     margin-bottom: 0;
 }
-/* Fix bullet point lists */
-/* https://github.com/audeering/sphinx-audeering-theme/issues/72 */
-.rst-content section ul {
-    list-style: disc;
-    line-height: 24px;
-    margin-bottom: 24px;
-}
-.rst-content section ul li {
-    list-style: disc;
-    margin-left: 24px;
-}
-.rst-content section ul li p:last-child {
-    margin-bottom: 0;
-}
 
 /***** LINKS *************************************************************/
 a {
