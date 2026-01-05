@@ -44,6 +44,11 @@ body {
     display: revert;
     padding-right: 4px;
 }
+/* Fix bottom margin of nested bullet points */
+/* https://github.com/audeering/sphinx-audeering-theme/pull/56 */
+.rst-content section ol p, .rst-content section ul p {
+    margin-bottom: 0;
+}
 
 /***** LINKS *************************************************************/
 a {
