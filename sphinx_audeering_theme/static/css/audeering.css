@@ -322,8 +322,15 @@ dl.property dt em {
 .wy-table-responsive table td {
     white-space: normal;
 }
+table td {
+    white-space: normal;
+}
 /* Fix vertical placement in tables */
 .wy-table-responsive table td ol.arabic {
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+table td ol.arabic {
     margin-bottom: 12px;
     margin-top: 12px;
 }
@@ -337,10 +344,17 @@ dl.property dt em {
 .wy-table-responsive thead th p {
     margin-bottom: 0 !important;
 }
+table thead th p {
+    margin-bottom: 0 !important;
+}
 /* Fix table row headers margin */
 .wy-table-responsive tbody tr th p {
     margin-bottom: 0 !important;
 }
+table tbody tr th p {
+    margin-bottom: 0 !important;
+}
+
 
 /***** TABLE PREVIEW in AUDBCARDS ****************************************/
 .rst-content table.docutils:not(.field-list) tr.clickable table.preview tr:nth-child(2n-1) td {
