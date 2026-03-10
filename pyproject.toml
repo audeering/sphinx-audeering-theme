@@ -66,8 +66,7 @@ build-backend = 'setuptools.build_meta'
 
 # ----- codespell ---------------------------------------------------------
 [tool.codespell]
-builtin = 'clear,rare,informal,usage,names'
-skip = './sphinx_audeering_theme.egg-info,./build,*svg'
+skip = './sphinx_audeering_theme.egg-info,./build,*svg,*.js'
 uri-ignore-words-list = 'ist,master'
 
 
