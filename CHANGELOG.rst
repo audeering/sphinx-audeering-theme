@@ -7,6 +7,13 @@ The format is based on `Keep a Changelog`_,
 and this project adheres to `Semantic Versioning`_.
 
 
+Version 1.4.2 (2026-03-10)
+--------------------------
+
+* Fixed: extra space in table headers
+* Fixed: add ``jquery.js`` to theme as it is no longer bundled with ``sphinx``
+
+
 Version 1.4.1 (2026-01-05)
 --------------------------
 
