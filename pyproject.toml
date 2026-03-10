@@ -222,5 +222,5 @@ sphinx_audeering_theme = [
 # ----- sourcery ----------------------------------------------------------
 [tool.sourcery]
 skip_files = [
-    "sphinxcontrib/jquery/jquery.js",
+    "sphinx_audeering_theme/static/js/jquery.js",
 ]
