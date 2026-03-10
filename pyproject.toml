@@ -30,7 +30,6 @@ classifiers = [
 requires-python = '>=3.10'
 dependencies = [
     'sphinx >=6.0.0',
-    'sphinxcontrib-jquery >=4.1',  # TOC expansion
 ]
 # Get version dynamically from git
 # (needs setuptools_scm tools config below)

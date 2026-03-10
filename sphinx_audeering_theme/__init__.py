@@ -62,15 +62,6 @@ def parse_remote_url(url):
 # http://www.sphinx-doc.org/en/stable/theming.html#distribute-your-theme-as-a-python-package
 # noqa: E501
 def setup(app):
-    # Add jquery for TOC expansion
-    app.setup_extension("sphinxcontrib.jquery")
-    # Manually call the callback because setup_extension() won't trigger it
-    # when called from within another extension's setup().
-    # See: https://github.com/sphinx-contrib/jquery/issues/23
-    from sphinxcontrib.jquery import add_js_files as jquery_add_js_files
-
-    app.connect("builder-inited", jquery_add_js_files)
-
     is_git = _run("if [ -d .git ] || git rev-parse --git-dir; then echo 1; fi")
     if is_git:
         html_context = git_html_context()
