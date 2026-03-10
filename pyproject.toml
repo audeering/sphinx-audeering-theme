@@ -217,10 +217,3 @@ sphinx_audeering_theme = [
 #
 # Use setuptools_scm to get version from git
 [tool.setuptools_scm]
-
-
-# ----- sourcery ----------------------------------------------------------
-[tool.sourcery]
-skip_files = [
-    "sphinx_audeering_theme/static/js/jquery.js",
-]
