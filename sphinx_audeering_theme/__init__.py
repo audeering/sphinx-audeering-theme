@@ -62,6 +62,9 @@ def parse_remote_url(url):
 # http://www.sphinx-doc.org/en/stable/theming.html#distribute-your-theme-as-a-python-package
 # noqa: E501
 def setup(app):
+    # Add jquery for TOC expansion
+    app.setup_extension("sphinxcontrib.jquery")
+
     is_git = _run("if [ -d .git ] || git rev-parse --git-dir; then echo 1; fi")
     if is_git:
         html_context = git_html_context()
