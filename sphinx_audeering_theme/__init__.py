@@ -64,6 +64,12 @@ def parse_remote_url(url):
 def setup(app):
     # Add jquery for TOC expansion
     app.setup_extension("sphinxcontrib.jquery")
+    # Manually call the callback because setup_extension() won't trigger it
+    # when called from within another extension's setup().
+    # See: https://github.com/sphinx-contrib/jquery/issues/23
+    from sphinxcontrib.jquery import add_js_files as jquery_add_js_files
+
+    app.connect("builder-inited", jquery_add_js_files)
 
     is_git = _run("if [ -d .git ] || git rev-parse --git-dir; then echo 1; fi")
     if is_git:
