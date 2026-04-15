@@ -12,7 +12,7 @@ Version 1.4.3 (2026-04-15)
 
 * Added: support for Python 3.14
 * Changed: exclude ``tests/`` and ``docs/``
-  folders from Python package
+  folders from the Python package
 
 
 Version 1.4.2 (2026-03-10)
